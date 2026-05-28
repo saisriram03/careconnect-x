@@ -1,0 +1,21 @@
+{
+  "overview": "CareConnect X is a premium AI-native healthcare web app that connects real health sensor data to live predictive care intelligence.",
+  "features": [
+    "Real-time health metrics from Bluetooth devices and manual entry",
+    "Predictive Care Engine with live risk predictions based on real data",
+    "Standard medical thresholds for stress, sleep, BP, and emergency risk",
+    "Long-term health metric history stored in backend for trend detection",
+    "No fake data — only real readings or clearly labeled No data states",
+    "Dashboard manual entry for heart rate, blood pressure, and sleep"
+  ],
+  "category": "healthcare-app",
+  "tags": [
+    "healthcare",
+    "ai",
+    "predictive-care",
+    "bluetooth",
+    "health-metrics",
+    "real-time"
+  ],
+  "last_updated": "2026-05-21T17:49:37.438Z"
+}

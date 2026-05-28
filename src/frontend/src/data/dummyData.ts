@@ -1,0 +1,453 @@
+export const doctors = [
+  {
+    id: 1,
+    name: "Dr. Priya Sharma",
+    specialty: "Cardiologist",
+    rating: 4.9,
+    fee: "₹800",
+    available: true,
+    initials: "PS",
+    color: "#38E6D0",
+    bio: "15 years experience in cardiac care",
+    slots: ["10:00 AM", "11:30 AM", "2:00 PM", "4:30 PM"],
+  },
+  {
+    id: 2,
+    name: "Dr. Rahul Mehta",
+    specialty: "General Physician",
+    rating: 4.7,
+    fee: "₹500",
+    available: true,
+    initials: "RM",
+    color: "#43E7A2",
+    bio: "Expert in preventive medicine",
+    slots: ["9:00 AM", "12:00 PM", "3:00 PM"],
+  },
+  {
+    id: 3,
+    name: "Dr. Anjali Verma",
+    specialty: "Dermatologist",
+    rating: 4.8,
+    fee: "₹700",
+    available: false,
+    initials: "AV",
+    color: "#00BFFF",
+    bio: "Specialist in skin & hair disorders",
+    slots: ["11:00 AM", "1:30 PM"],
+  },
+  {
+    id: 4,
+    name: "Dr. Suresh Patel",
+    specialty: "Orthopedic",
+    rating: 4.6,
+    fee: "₹900",
+    available: true,
+    initials: "SP",
+    color: "#A78BFA",
+    bio: "Joint replacement & sports medicine",
+    slots: ["10:30 AM", "2:30 PM", "5:00 PM"],
+  },
+  {
+    id: 5,
+    name: "Dr. Meera Nair",
+    specialty: "Pediatrician",
+    rating: 4.9,
+    fee: "₹600",
+    available: true,
+    initials: "MN",
+    color: "#F97316",
+    bio: "Dedicated to child health & wellness",
+    slots: ["9:30 AM", "1:00 PM", "4:00 PM"],
+  },
+  {
+    id: 6,
+    name: "Dr. Vikram Singh",
+    specialty: "Neurologist",
+    rating: 4.8,
+    fee: "₹1200",
+    available: false,
+    initials: "VS",
+    color: "#EC4899",
+    bio: "Brain & nervous system specialist",
+    slots: ["11:30 AM", "3:30 PM"],
+  },
+];
+
+export const notifications = [
+  {
+    id: 1,
+    title: "Appointment Confirmed",
+    message: "Dr. Priya Sharma at 10:00 AM tomorrow",
+    time: "5 min ago",
+    read: false,
+    type: "success",
+  },
+  {
+    id: 2,
+    title: "New Test Results",
+    message: "Your blood report is ready to view",
+    time: "1 hour ago",
+    read: false,
+    type: "info",
+  },
+  {
+    id: 3,
+    title: "Medication Reminder",
+    message: "Take Metformin 500mg with dinner",
+    time: "2 hours ago",
+    read: false,
+    type: "warning",
+  },
+  {
+    id: 4,
+    title: "Community Update",
+    message: "A volunteer accepted your help request",
+    time: "3 hours ago",
+    read: true,
+    type: "info",
+  },
+];
+
+export const recentActivity = [
+  {
+    id: 1,
+    icon: "stethoscope",
+    text: "Consulted Dr. Rahul Mehta for fever",
+    time: "Today, 9:30 AM",
+    type: "consultation",
+  },
+  {
+    id: 2,
+    icon: "file",
+    text: "Uploaded blood test report",
+    time: "Yesterday, 4:00 PM",
+    type: "record",
+  },
+  {
+    id: 3,
+    icon: "pill",
+    text: "Refilled Metformin prescription",
+    time: "Dec 28, 11:00 AM",
+    type: "prescription",
+  },
+  {
+    id: 4,
+    icon: "heart",
+    text: "Completed health checkup",
+    time: "Dec 26, 2:00 PM",
+    type: "checkup",
+  },
+  {
+    id: 5,
+    icon: "users",
+    text: "Requested community health support",
+    time: "Dec 24, 10:00 AM",
+    type: "community",
+  },
+];
+
+export const appointments = [
+  {
+    id: 1,
+    doctor: "Dr. Priya Sharma",
+    specialty: "Cardiologist",
+    date: "Jan 5, 2026",
+    time: "10:00 AM",
+    status: "confirmed",
+    initials: "PS",
+    color: "#38E6D0",
+  },
+  {
+    id: 2,
+    doctor: "Dr. Anjali Verma",
+    specialty: "Dermatologist",
+    date: "Jan 8, 2026",
+    time: "2:30 PM",
+    status: "pending",
+    initials: "AV",
+    color: "#00BFFF",
+  },
+];
+
+export const prescriptions = [
+  {
+    id: 1,
+    name: "Metformin 500mg",
+    dosage: "2x daily",
+    refills: 2,
+    daysLeft: 12,
+  },
+  {
+    id: 2,
+    name: "Atorvastatin 10mg",
+    dosage: "1x daily (night)",
+    refills: 5,
+    daysLeft: 25,
+  },
+  { id: 3, name: "Vitamin D3", dosage: "1x daily", refills: 3, daysLeft: 30 },
+];
+
+export const volunteers = [
+  {
+    id: 1,
+    name: "Kavita Reddy",
+    skill: "First Aid",
+    distance: "0.8 km",
+    initials: "KR",
+    color: "#38E6D0",
+    available: true,
+  },
+  {
+    id: 2,
+    name: "Arjun Kapoor",
+    skill: "Transport",
+    distance: "1.2 km",
+    initials: "AK",
+    color: "#43E7A2",
+    available: true,
+  },
+  {
+    id: 3,
+    name: "Sneha Gupta",
+    skill: "Nursing",
+    distance: "2.1 km",
+    initials: "SG",
+    color: "#00BFFF",
+    available: true,
+  },
+  {
+    id: 4,
+    name: "Mohit Joshi",
+    skill: "Medical Student",
+    distance: "2.5 km",
+    initials: "MJ",
+    color: "#A78BFA",
+    available: false,
+  },
+  {
+    id: 5,
+    name: "Riya Patel",
+    skill: "Emergency Care",
+    distance: "3.0 km",
+    initials: "RP",
+    color: "#F97316",
+    available: true,
+  },
+  {
+    id: 6,
+    name: "Anil Kumar",
+    skill: "Physiotherapy",
+    distance: "4.2 km",
+    initials: "AK",
+    color: "#EC4899",
+    available: true,
+  },
+  {
+    id: 7,
+    name: "Priya Menon",
+    skill: "Medicine Delivery",
+    distance: "1.5 km",
+    initials: "PM",
+    color: "#38E6D0",
+    available: true,
+  },
+];
+
+export const helpRequests = [
+  {
+    id: 1,
+    issue: "Need transport to hospital",
+    volunteer: "Arjun Kapoor",
+    status: "Accepted",
+    time: "10 min ago",
+  },
+  {
+    id: 2,
+    issue: "Require first aid assistance",
+    volunteer: "Kavita Reddy",
+    status: "Pending",
+    time: "25 min ago",
+  },
+  {
+    id: 3,
+    issue: "Medicine delivery needed",
+    volunteer: "Unassigned",
+    status: "Pending",
+    time: "2 hours ago",
+  },
+];
+
+export const nearbyHospitals = [
+  {
+    id: 1,
+    name: "AIIMS Delhi",
+    distance: "1.2 km",
+    phone: "011-26588500",
+    type: "Government",
+  },
+  {
+    id: 2,
+    name: "Apollo Hospital",
+    distance: "2.4 km",
+    phone: "011-71179090",
+    type: "Private",
+  },
+  {
+    id: 3,
+    name: "Safdarjung Hospital",
+    distance: "3.1 km",
+    phone: "011-26198018",
+    type: "Government",
+  },
+  {
+    id: 4,
+    name: "Max Healthcare",
+    distance: "3.8 km",
+    phone: "011-26515050",
+    type: "Private",
+  },
+];
+
+export const medicalRecords = [
+  {
+    id: 1,
+    date: "Dec 28, 2025",
+    type: "Blood Test",
+    doctor: "Dr. Rahul Mehta",
+    status: "Normal",
+    statusColor: "#43E7A2",
+    details: "CBC, LFT, KFT — all within normal range. HbA1c: 5.7%",
+  },
+  {
+    id: 2,
+    date: "Dec 15, 2025",
+    type: "ECG Report",
+    doctor: "Dr. Priya Sharma",
+    status: "Reviewed",
+    statusColor: "#00BFFF",
+    details: "Normal sinus rhythm. No ST changes. PR interval 160ms.",
+  },
+  {
+    id: 3,
+    date: "Nov 22, 2025",
+    type: "X-Ray Chest",
+    doctor: "Dr. Vikram Singh",
+    status: "Clear",
+    statusColor: "#43E7A2",
+    details: "No active consolidation or pleural effusion. Heart size normal.",
+  },
+  {
+    id: 4,
+    date: "Nov 5, 2025",
+    type: "MRI Brain",
+    doctor: "Dr. Vikram Singh",
+    status: "Review",
+    statusColor: "#F59E0B",
+    details: "Mild white matter changes. Follow-up in 3 months recommended.",
+  },
+  {
+    id: 5,
+    date: "Oct 14, 2025",
+    type: "Ultrasound",
+    doctor: "Dr. Suresh Patel",
+    status: "Normal",
+    statusColor: "#43E7A2",
+    details: "Liver, kidneys, spleen — all normal. No gallstones detected.",
+  },
+];
+
+export const adminStats = {
+  totalUsers: 1245,
+  doctors: 89,
+  activeRequests: 34,
+  resolvedCases: 892,
+};
+
+export const userRegistrationData = [
+  { month: "Aug", count: 95 },
+  { month: "Sep", count: 138 },
+  { month: "Oct", count: 172 },
+  { month: "Nov", count: 154 },
+  { month: "Dec", count: 201 },
+  { month: "Jan", count: 187 },
+];
+
+export const specialtyData = [
+  { name: "General", count: 28 },
+  { name: "Cardio", count: 15 },
+  { name: "Ortho", count: 12 },
+  { name: "Derm", count: 10 },
+  { name: "Neuro", count: 9 },
+  { name: "Peds", count: 15 },
+];
+
+export const pendingVolunteers = [
+  {
+    id: 1,
+    name: "Deepak Sharma",
+    skill: "First Aid",
+    location: "Delhi",
+    applied: "2 days ago",
+  },
+  {
+    id: 2,
+    name: "Pooja Mishra",
+    skill: "Nursing",
+    location: "Mumbai",
+    applied: "3 days ago",
+  },
+  {
+    id: 3,
+    name: "Ramesh Tiwari",
+    skill: "Transport",
+    location: "Bangalore",
+    applied: "4 days ago",
+  },
+  {
+    id: 4,
+    name: "Sunita Yadav",
+    skill: "Counseling",
+    location: "Chennai",
+    applied: "5 days ago",
+  },
+  {
+    id: 5,
+    name: "Nikhil Bose",
+    skill: "Med Student",
+    location: "Kolkata",
+    applied: "1 week ago",
+  },
+];
+
+export const systemLogs = [
+  {
+    id: 1,
+    event: "New user registration: alex.johnson@email.com",
+    time: "2 min ago",
+    type: "info",
+  },
+  {
+    id: 2,
+    event: "Doctor profile updated: Dr. Priya Sharma",
+    time: "15 min ago",
+    type: "update",
+  },
+  {
+    id: 3,
+    event: "Emergency alert triggered in Delhi region",
+    time: "1 hour ago",
+    type: "alert",
+  },
+  {
+    id: 4,
+    event: "Volunteer approved: Kavita Reddy",
+    time: "2 hours ago",
+    type: "success",
+  },
+  {
+    id: 5,
+    event: "System backup completed successfully",
+    time: "4 hours ago",
+    type: "success",
+  },
+];

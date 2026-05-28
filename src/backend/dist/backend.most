@@ -1,0 +1,23 @@
+// Version: 1.0.0
+type HealthMetric__826542814 =
+  {
+    baseline_14d : ?Float;
+    metric_type : MetricType__1070856380;
+    recorded_at : Nat64;
+    source : MetricSource__906587230;
+    user_id : Text;
+    value : Float
+  };
+type MetricSource__906587230 = {#Bluetooth; #Manual};
+type MetricType__1070856380 =
+  {#DiastolicBP; #HeartRate; #SleepHours; #SystolicBP};
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+actor {
+  stable metrics :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?HealthMetric__826542814]];
+      var elementIndex : Nat__490723111
+    }
+};

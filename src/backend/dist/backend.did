@@ -1,0 +1,47 @@
+type PredictionInput = 
+ record {
+   consecutive_low_sleep_nights: nat;
+   diastolic_avg_14d: opt float64;
+   diastolic_avg_7d: opt float64;
+   diastolic_latest: opt float64;
+   hr_avg_14d: opt float64;
+   hr_avg_7d: opt float64;
+   hr_latest: opt float64;
+   sleep_avg_14d: opt float64;
+   sleep_avg_7d: opt float64;
+   sleep_latest: opt float64;
+   systolic_avg_14d: opt float64;
+   systolic_avg_7d: opt float64;
+   systolic_latest: opt float64;
+ };
+type MetricType = 
+ variant {
+   DiastolicBP;
+   HeartRate;
+   SleepHours;
+   SystolicBP;
+ };
+type MetricSource = 
+ variant {
+   Bluetooth;
+   Manual;
+ };
+type HealthMetric = 
+ record {
+   baseline_14d: opt float64;
+   metric_type: MetricType;
+   recorded_at: nat64;
+   source: MetricSource;
+   user_id: text;
+   value: float64;
+ };
+service : {
+  add_metric: (user_id: text, metric_type: text, value: float64, source:
+   text) -> (variant {
+               err: text;
+               ok: PredictionInput;
+             });
+  get_prediction_input: (user_id: text) -> (opt PredictionInput) query;
+  get_user_metrics: (user_id: text, past_days: nat, metric_type_filter:
+   opt text) -> (vec HealthMetric) query;
+}
