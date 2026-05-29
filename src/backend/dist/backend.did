@@ -1,3 +1,14 @@
+type VerifyResult = 
+ variant {
+   notFound;
+   ok;
+   wrongPassword;
+ };
+type RegisterResult = 
+ variant {
+   alreadyExists;
+   ok;
+ };
 type PredictionInput = 
  record {
    consecutive_low_sleep_nights: nat;
@@ -44,4 +55,6 @@ service : {
   get_prediction_input: (user_id: text) -> (opt PredictionInput) query;
   get_user_metrics: (user_id: text, past_days: nat, metric_type_filter:
    opt text) -> (vec HealthMetric) query;
+  registerUser: (email: text, passwordHash: text) -> (RegisterResult);
+  verifyPassword: (email: text, passwordHash: text) -> (VerifyResult) query;
 }

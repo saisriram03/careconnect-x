@@ -2,6 +2,16 @@ import { useNavigate } from "@tanstack/react-router";
 import { Eye, EyeOff, HeartPulse, Loader2 } from "lucide-react";
 import { useState } from "react";
 
+// djb2-style deterministic hash: single input string → hex string
+function hashPassword(input: string): string {
+  let hash = 5381;
+  for (let i = 0; i < input.length; i++) {
+    hash = ((hash << 5) + hash) ^ input.charCodeAt(i);
+    hash = hash >>> 0; // keep 32-bit unsigned
+  }
+  return hash.toString(16).padStart(8, "0");
+}
+
 type Tab = "login" | "register";
 
 interface FormErrors {
@@ -49,29 +59,61 @@ export default function AuthPage() {
     return errs;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const errs = tab === "login" ? validateLogin() : validateRegister();
     setErrors(errs);
     if (Object.keys(errs).length > 0) return;
     setLoading(true);
 
-    // Save user name to localStorage
-    if (tab === "register") {
-      localStorage.setItem("ccx_user_name", registerForm.name);
-    } else {
-      // For login, use stored name or derive from email
-      const storedName = localStorage.getItem("ccx_user_name");
-      if (!storedName) {
-        const derived = loginForm.email
-          .split("@")[0]
-          .replace(/[._-]/g, " ")
-          .replace(/\b\w/g, (c) => c.toUpperCase());
-        localStorage.setItem("ccx_user_name", derived);
+    try {
+      if (tab === "register") {
+        const emailKey = registerForm.email.toLowerCase();
+        const hash = hashPassword(`${emailKey}:${registerForm.password}`);
+        // Check if account already exists
+        const existing = localStorage.getItem(`ccx_auth_${emailKey}`);
+        if (existing) {
+          setErrors({ email: "An account with this email already exists." });
+          setLoading(false);
+          return;
+        }
+        // Store the hashed password keyed by lowercased email
+        localStorage.setItem(`ccx_auth_${emailKey}`, hash);
+        localStorage.setItem("ccx_user_name", registerForm.name);
+        localStorage.setItem("ccx_user_email", emailKey);
+      } else {
+        const loginEmailKey = loginForm.email.toLowerCase();
+        const hash = hashPassword(`${loginEmailKey}:${loginForm.password}`);
+        const stored = localStorage.getItem(`ccx_auth_${loginEmailKey}`);
+        if (!stored) {
+          setErrors({
+            email: "No account found with this email. Please register first.",
+          });
+          setLoading(false);
+          return;
+        }
+        if (hash !== stored) {
+          setErrors({ password: "Wrong password. Please try again." });
+          setLoading(false);
+          return;
+        }
+        // On successful login, restore or derive name
+        localStorage.setItem("ccx_user_email", loginEmailKey);
+        const storedName = localStorage.getItem("ccx_user_name");
+        if (!storedName) {
+          const derived = loginForm.email
+            .split("@")[0]
+            .replace(/[._-]/g, " ")
+            .replace(/\b\w/g, (c: string) => c.toUpperCase());
+          localStorage.setItem("ccx_user_name", derived);
+        }
       }
-    }
 
-    setTimeout(() => navigate({ to: "/dashboard" }), 1200);
+      setTimeout(() => navigate({ to: "/dashboard" }), 1200);
+    } catch {
+      setErrors({ password: "Something went wrong. Please try again." });
+      setLoading(false);
+    }
   };
 
   const inputClass =
@@ -171,14 +213,20 @@ export default function AuthPage() {
               placeholder="Email Address"
               className={inputClass}
               value={tab === "login" ? loginForm.email : registerForm.email}
-              onChange={(e) =>
+              onChange={(e) => {
+                setErrors((prev) => ({ ...prev, email: undefined }));
                 tab === "login"
                   ? setLoginForm({ ...loginForm, email: e.target.value })
-                  : setRegisterForm({ ...registerForm, email: e.target.value })
-              }
+                  : setRegisterForm({ ...registerForm, email: e.target.value });
+              }}
             />
             {errors.email && (
-              <p className="text-xs text-[#FF4D5A] mt-1 pl-1">{errors.email}</p>
+              <p
+                className="text-xs text-[#FF4D5A] mt-1.5 pl-1 flex items-center gap-1 font-medium"
+                data-ocid="auth.email.field_error"
+              >
+                <span>⚠</span> {errors.email}
+              </p>
             )}
           </div>
 
@@ -192,14 +240,15 @@ export default function AuthPage() {
                 value={
                   tab === "login" ? loginForm.password : registerForm.password
                 }
-                onChange={(e) =>
+                onChange={(e) => {
+                  setErrors((prev) => ({ ...prev, password: undefined }));
                   tab === "login"
                     ? setLoginForm({ ...loginForm, password: e.target.value })
                     : setRegisterForm({
                         ...registerForm,
                         password: e.target.value,
-                      })
-                }
+                      });
+                }}
               />
               <button
                 type="button"
@@ -210,8 +259,11 @@ export default function AuthPage() {
               </button>
             </div>
             {errors.password && (
-              <p className="text-xs text-[#FF4D5A] mt-1 pl-1">
-                {errors.password}
+              <p
+                className="text-xs text-[#FF4D5A] mt-1.5 pl-1 flex items-center gap-1 font-medium animate-pulse"
+                data-ocid="auth.password.field_error"
+              >
+                <span>⚠</span> {errors.password}
               </p>
             )}
           </div>
@@ -256,7 +308,9 @@ export default function AuthPage() {
             {loading ? (
               <>
                 <Loader2 size={16} className="animate-spin" />
-                <span>Signing in...</span>
+                <span>
+                  {tab === "login" ? "Checking..." : "Creating account..."}
+                </span>
               </>
             ) : (
               <span>{tab === "login" ? "Sign In" : "Create Account"}</span>

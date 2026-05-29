@@ -122,6 +122,15 @@ export enum MetricType {
     SystolicBP = "SystolicBP",
     SleepHours = "SleepHours"
 }
+export enum RegisterResult {
+    ok = "ok",
+    alreadyExists = "alreadyExists"
+}
+export enum VerifyResult {
+    ok = "ok",
+    wrongPassword = "wrongPassword",
+    notFound = "notFound"
+}
 export interface backendInterface {
     add_metric(user_id: string, metric_type: string, value: number, source: string): Promise<{
         __kind__: "ok";
@@ -132,8 +141,10 @@ export interface backendInterface {
     }>;
     get_prediction_input(user_id: string): Promise<PredictionInput | null>;
     get_user_metrics(user_id: string, past_days: bigint, metric_type_filter: string | null): Promise<Array<HealthMetric>>;
+    registerUser(email: string, passwordHash: string): Promise<RegisterResult>;
+    verifyPassword(email: string, passwordHash: string): Promise<VerifyResult>;
 }
-import type { HealthMetric as _HealthMetric, MetricSource as _MetricSource, MetricType as _MetricType, PredictionInput as _PredictionInput } from "./declarations/backend.did.d.ts";
+import type { HealthMetric as _HealthMetric, MetricSource as _MetricSource, MetricType as _MetricType, PredictionInput as _PredictionInput, RegisterResult as _RegisterResult, VerifyResult as _VerifyResult } from "./declarations/backend.did.d.ts";
 export class Backend implements backendInterface {
     constructor(private actor: ActorSubclass<_SERVICE>, private _uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, private _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, private processError?: (error: unknown) => never){}
     async add_metric(arg0: string, arg1: string, arg2: number, arg3: string): Promise<{
@@ -184,6 +195,34 @@ export class Backend implements backendInterface {
             return from_candid_vec_n7(this._uploadFile, this._downloadFile, result);
         }
     }
+    async registerUser(arg0: string, arg1: string): Promise<RegisterResult> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.registerUser(arg0, arg1);
+                return from_candid_RegisterResult_n14(this._uploadFile, this._downloadFile, result);
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.registerUser(arg0, arg1);
+            return from_candid_RegisterResult_n14(this._uploadFile, this._downloadFile, result);
+        }
+    }
+    async verifyPassword(arg0: string, arg1: string): Promise<VerifyResult> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.verifyPassword(arg0, arg1);
+                return from_candid_VerifyResult_n16(this._uploadFile, this._downloadFile, result);
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.verifyPassword(arg0, arg1);
+            return from_candid_VerifyResult_n16(this._uploadFile, this._downloadFile, result);
+        }
+    }
 }
 function from_candid_HealthMetric_n8(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: _HealthMetric): HealthMetric {
     return from_candid_record_n9(_uploadFile, _downloadFile, value);
@@ -196,6 +235,12 @@ function from_candid_MetricType_n12(_uploadFile: (file: ExternalBlob) => Promise
 }
 function from_candid_PredictionInput_n2(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: _PredictionInput): PredictionInput {
     return from_candid_record_n3(_uploadFile, _downloadFile, value);
+}
+function from_candid_RegisterResult_n14(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: _RegisterResult): RegisterResult {
+    return from_candid_variant_n15(_uploadFile, _downloadFile, value);
+}
+function from_candid_VerifyResult_n16(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: _VerifyResult): VerifyResult {
+    return from_candid_variant_n17(_uploadFile, _downloadFile, value);
 }
 function from_candid_opt_n4(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: [] | [number]): number | null {
     return value.length === 0 ? null : value[0];
@@ -308,6 +353,22 @@ function from_candid_variant_n13(_uploadFile: (file: ExternalBlob) => Promise<Ui
     SleepHours: null;
 }): MetricType {
     return "HeartRate" in value ? MetricType.HeartRate : "DiastolicBP" in value ? MetricType.DiastolicBP : "SystolicBP" in value ? MetricType.SystolicBP : "SleepHours" in value ? MetricType.SleepHours : value;
+}
+function from_candid_variant_n15(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: {
+    ok: null;
+} | {
+    alreadyExists: null;
+}): RegisterResult {
+    return "ok" in value ? RegisterResult.ok : "alreadyExists" in value ? RegisterResult.alreadyExists : value;
+}
+function from_candid_variant_n17(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: {
+    ok: null;
+} | {
+    wrongPassword: null;
+} | {
+    notFound: null;
+}): VerifyResult {
+    return "ok" in value ? VerifyResult.ok : "wrongPassword" in value ? VerifyResult.wrongPassword : "notFound" in value ? VerifyResult.notFound : value;
 }
 function from_candid_vec_n7(_uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, value: Array<_HealthMetric>): Array<HealthMetric> {
     return value.map((x)=>from_candid_HealthMetric_n8(_uploadFile, _downloadFile, x));

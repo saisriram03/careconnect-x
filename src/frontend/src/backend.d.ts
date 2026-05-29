@@ -40,6 +40,15 @@ export enum MetricType {
     SystolicBP = "SystolicBP",
     SleepHours = "SleepHours"
 }
+export enum RegisterResult {
+    ok = "ok",
+    alreadyExists = "alreadyExists"
+}
+export enum VerifyResult {
+    ok = "ok",
+    wrongPassword = "wrongPassword",
+    notFound = "notFound"
+}
 export interface backendInterface {
     add_metric(user_id: string, metric_type: string, value: number, source: string): Promise<{
         __kind__: "ok";
@@ -50,4 +59,6 @@ export interface backendInterface {
     }>;
     get_prediction_input(user_id: string): Promise<PredictionInput | null>;
     get_user_metrics(user_id: string, past_days: bigint, metric_type_filter: string | null): Promise<Array<HealthMetric>>;
+    registerUser(email: string, passwordHash: string): Promise<RegisterResult>;
+    verifyPassword(email: string, passwordHash: string): Promise<VerifyResult>;
 }

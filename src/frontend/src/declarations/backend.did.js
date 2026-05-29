@@ -41,6 +41,15 @@ export const HealthMetric = IDL.Record({
   'user_id' : IDL.Text,
   'recorded_at' : IDL.Nat64,
 });
+export const RegisterResult = IDL.Variant({
+  'ok' : IDL.Null,
+  'alreadyExists' : IDL.Null,
+});
+export const VerifyResult = IDL.Variant({
+  'ok' : IDL.Null,
+  'wrongPassword' : IDL.Null,
+  'notFound' : IDL.Null,
+});
 
 export const idlService = IDL.Service({
   'add_metric' : IDL.Func(
@@ -58,6 +67,8 @@ export const idlService = IDL.Service({
       [IDL.Vec(HealthMetric)],
       ['query'],
     ),
+  'registerUser' : IDL.Func([IDL.Text, IDL.Text], [RegisterResult], []),
+  'verifyPassword' : IDL.Func([IDL.Text, IDL.Text], [VerifyResult], ['query']),
 });
 
 export const idlInitArgs = [];
@@ -96,6 +107,15 @@ export const idlFactory = ({ IDL }) => {
     'user_id' : IDL.Text,
     'recorded_at' : IDL.Nat64,
   });
+  const RegisterResult = IDL.Variant({
+    'ok' : IDL.Null,
+    'alreadyExists' : IDL.Null,
+  });
+  const VerifyResult = IDL.Variant({
+    'ok' : IDL.Null,
+    'wrongPassword' : IDL.Null,
+    'notFound' : IDL.Null,
+  });
   
   return IDL.Service({
     'add_metric' : IDL.Func(
@@ -111,6 +131,12 @@ export const idlFactory = ({ IDL }) => {
     'get_user_metrics' : IDL.Func(
         [IDL.Text, IDL.Nat, IDL.Opt(IDL.Text)],
         [IDL.Vec(HealthMetric)],
+        ['query'],
+      ),
+    'registerUser' : IDL.Func([IDL.Text, IDL.Text], [RegisterResult], []),
+    'verifyPassword' : IDL.Func(
+        [IDL.Text, IDL.Text],
+        [VerifyResult],
         ['query'],
       ),
   });

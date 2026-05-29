@@ -2,46 +2,37 @@ import { useNavigate } from "@tanstack/react-router";
 import {
   Activity,
   AlertTriangle,
-  Bluetooth,
-  BluetoothConnected,
-  BluetoothOff,
   Bot,
   Brain,
   CheckCircle2,
-  ChevronDown,
-  ChevronUp,
   Clock,
   FileText,
   Footprints,
   Heart,
+  Info,
   Loader2,
   Moon,
   Pill,
-  Smartphone,
+  RefreshCw,
   Sparkles,
   Stethoscope,
   TrendingUp,
-  Trophy,
   UserRound,
   Users,
-  Watch,
+  Wifi,
   X,
   Zap,
 } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
 import { useAI } from "../ai/AIContext";
 
 import { createActor } from "@/backend";
+import { useGoogleFit } from "@/hooks/useGoogleFit";
 import { useActor } from "@caffeineai/core-infrastructure";
 import GlassCard from "../components/ui/GlassCard";
 import { appointments, prescriptions, recentActivity } from "../data/dummyData";
-import { useBluetoothHealth } from "../hooks/useBluetoothHealth";
-
-const _isIOS = () =>
-  typeof navigator !== "undefined" &&
-  /iPad|iPhone|iPod/.test(navigator.userAgent) &&
-  !(window as unknown as Record<string, unknown>).MSStream;
 
 const activityIcons: Record<string, React.ReactNode> = {
   consultation: <Stethoscope size={14} />,
@@ -158,7 +149,7 @@ function HeartRateTile({
 }: {
   value: number | null;
   lastRecorded: Date | null;
-  source: "Bluetooth" | "Manual" | null;
+  source: "Google Fit" | "Manual" | null;
   onManualInput: (bpm: number | null) => void;
 }) {
   const prevRef = useRef<number | null>(null);
@@ -230,16 +221,18 @@ function HeartRateTile({
         />
       </div>
       {value !== null ? (
-        <p
-          className="text-sm font-bold transition-all duration-200"
-          style={{
-            color: "#FF6B6B",
-            transform: bump ? "scale(1.2)" : "scale(1)",
-            display: "inline-block",
-          }}
-        >
-          {value}
-        </p>
+        <div className="flex items-center justify-center gap-1">
+          <p
+            className="text-sm font-bold transition-all duration-200"
+            style={{
+              color: "#FF6B6B",
+              transform: bump ? "scale(1.2)" : "scale(1)",
+              display: "inline-block",
+            }}
+          >
+            {value}
+          </p>
+        </div>
       ) : (
         <div className="flex gap-1 items-center justify-center">
           <input
@@ -274,7 +267,7 @@ function HeartRateTile({
       {lastTime && source && (
         <p
           className="text-[9px] mt-0.5"
-          style={{ color: source === "Bluetooth" ? "#22C55E" : "#f9a8c9" }}
+          style={{ color: source === "Google Fit" ? "#22C55E" : "#f9a8c9" }}
         >
           {lastTime} via {source}
         </p>
@@ -293,7 +286,7 @@ function BloodPressureTile({
   systolic: number | null;
   diastolic: number | null;
   lastRecorded: Date | null;
-  source: "Bluetooth" | "Manual" | null;
+  source: "Google Fit" | "Manual" | null;
   onManualInput: (bp: { systolic: number; diastolic: number } | null) => void;
 }) {
   const hasData = systolic !== null && diastolic !== null;
@@ -402,7 +395,7 @@ function BloodPressureTile({
       {lastTime && source && (
         <p
           className="text-[9px] mt-0.5"
-          style={{ color: source === "Bluetooth" ? "#22C55E" : "#f9a8c9" }}
+          style={{ color: source === "Google Fit" ? "#22C55E" : "#f9a8c9" }}
         >
           {lastTime} via {source}
         </p>
@@ -418,9 +411,8 @@ function SleepTile({
   onManualInput,
 }: {
   value: number | null;
-  connected: boolean;
   lastRecorded: Date | null;
-  source: "Bluetooth" | "Manual" | null;
+  source: "Google Fit" | "Manual" | null;
   onManualInput: (v: number | null) => void;
 }) {
   const [inputVal, setInputVal] = useState("");
@@ -498,7 +490,7 @@ function SleepTile({
       {lastTime && source && (
         <p
           className="text-[9px] mt-0.5"
-          style={{ color: source === "Bluetooth" ? "#22C55E" : "#A78BFA" }}
+          style={{ color: source === "Google Fit" ? "#22C55E" : "#A78BFA" }}
         >
           {lastTime} via {source}
         </p>
@@ -508,8 +500,8 @@ function SleepTile({
 }
 
 function StepsTile({ value }: { value: number | null }) {
-  if (value === null) return null;
-  const isGoalMet = value >= 10000;
+  const hasData = value !== null && value > 0;
+  const isGoalMet = hasData && (value as number) >= 10000;
   return (
     <div
       className="rounded-xl p-3 text-center"
@@ -518,17 +510,29 @@ function StepsTile({ value }: { value: number | null }) {
       <Footprints
         size={18}
         className="mx-auto mb-1"
-        style={{ color: "#34D399", opacity: 1 }}
+        style={{ color: "#34D399", opacity: hasData ? 1 : 0.4 }}
       />
-      <p className="text-sm font-bold" style={{ color: "#34D399" }}>
-        {value.toLocaleString()}
-      </p>
-      <p className="text-[10px] text-[#888888] mt-0.5">Steps</p>
-      <StatusBadge
-        label={isGoalMet ? "Goal Met" : "Keep Going"}
-        type={isGoalMet ? "good" : "fair"}
-      />
-      <p className="text-[9px] text-[#4A5568] mt-0.5">today</p>
+      {hasData ? (
+        <>
+          <p className="text-sm font-bold" style={{ color: "#34D399" }}>
+            {(value as number).toLocaleString()}
+          </p>
+          <p className="text-[10px] text-[#888888] mt-0.5">Steps</p>
+          <StatusBadge
+            label={isGoalMet ? "Goal Met" : "Keep Going"}
+            type={isGoalMet ? "good" : "fair"}
+          />
+          <p className="text-[9px] text-[#4A5568] mt-0.5">today</p>
+        </>
+      ) : (
+        <>
+          <p className="text-sm font-bold text-[#555]">—</p>
+          <p className="text-[10px] text-[#888888] mt-0.5">Steps</p>
+          <span className="text-[9px] text-[#555] bg-[rgba(255,255,255,0.05)] px-1.5 py-0.5 rounded-full mt-0.5 inline-block">
+            Not available
+          </span>
+        </>
+      )}
     </div>
   );
 }
@@ -891,373 +895,144 @@ function HealthScorePanel({
   );
 }
 
-// --- Bluetooth Connection Panel ---
+// --- Google Fit Connection Panel ---
 
-function DeviceTypeBadge({
-  type,
-}: { type: "phone" | "tracker" | "unknown" | "headphone" }) {
-  if (type === "phone") {
-    return (
-      <span
-        className="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full"
-        style={{
-          background: "rgba(99,102,241,0.15)",
-          color: "#818CF8",
-          border: "1px solid rgba(99,102,241,0.3)",
-        }}
-      >
-        <Smartphone size={10} />
-        Phone
-      </span>
-    );
-  }
-  if (type === "headphone") {
-    return (
-      <span
-        className="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full"
-        style={{
-          background: "rgba(251,191,36,0.15)",
-          color: "#FBBF24",
-          border: "1px solid rgba(251,191,36,0.3)",
-        }}
-      >
-        <Bluetooth size={10} />
-        Headphones
-      </span>
-    );
-  }
-  if (type === "tracker") {
-    return (
-      <span
-        className="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full"
-        style={{
-          background: "rgba(52,211,153,0.15)",
-          color: "#34D399",
-          border: "1px solid rgba(52,211,153,0.3)",
-        }}
-      >
-        <Watch size={10} />
-        Tracker
-      </span>
-    );
-  }
-  return (
-    <span
-      className="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full"
-      style={{
-        background: "rgba(249,168,201,0.15)",
-        color: "#f9a8c9",
-        border: "1px solid rgba(249,168,201,0.3)",
-      }}
-    >
-      <Bluetooth size={10} />
-      Device
-    </span>
-  );
-}
-
-interface BluetoothPanelProps {
-  isSupported: boolean;
-  isUnsupported: boolean;
-  connectionStatus: "disconnected" | "connecting" | "connected" | "error";
-  deviceName: string | null;
-  deviceType: "phone" | "tracker" | "headphone" | "unknown";
-  connectedApps: string[];
-  connectedServices: string[];
-  heartRate: number | null;
-  bloodPressure: { systolic: number; diastolic: number } | null;
-  steps: number | null;
-  errorMessage: string | null;
-  onConnect: () => void;
+interface GoogleFitPanelProps {
+  isAuthorized: boolean;
+  isFetching: boolean;
+  isRedirecting: boolean;
+  lastSync: Date | null;
+  clientIdConfigured: boolean;
+  onRequestToken: () => void;
+  onRefresh: () => void;
   onDisconnect: () => void;
+  errorMessage: string | null;
 }
 
-function BluetoothPanel({
-  isUnsupported,
-  connectionStatus,
-  deviceName,
-  deviceType,
-  connectedApps,
-  connectedServices,
-  heartRate,
-  bloodPressure,
-  steps,
-  errorMessage,
-  onConnect,
+function GoogleFitPanel({
+  isAuthorized,
+  isFetching,
+  isRedirecting,
+  lastSync,
+  clientIdConfigured,
+  onRequestToken,
+  onRefresh,
   onDisconnect,
-}: BluetoothPanelProps) {
-  const isConnected = connectionStatus === "connected";
-  const isConnecting = connectionStatus === "connecting";
-  const hasError = connectionStatus === "error";
-
+  errorMessage,
+}: GoogleFitPanelProps) {
+  const isIOSDevice =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+    !(window as unknown as Record<string, unknown>).MSStream;
   return (
-    <div
-      className="rounded-xl mb-4 overflow-hidden"
-      style={{
-        background: "rgba(249,168,201,0.05)",
-        border: isConnected
-          ? "1px solid rgba(34,197,94,0.25)"
-          : hasError
-            ? "1px solid rgba(239,68,68,0.25)"
-            : "1px solid rgba(249,168,201,0.15)",
-      }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 space-y-4 mb-4"
     >
-      {/* iOS / unsupported */}
-      {isUnsupported ? (
-        <div className="flex items-start gap-3 p-3">
-          <BluetoothOff
-            size={16}
-            className="text-[#EF4444] flex-shrink-0 mt-0.5"
-          />
+      {isIOSDevice && (
+        <div className="flex items-start gap-3 rounded-xl border border-amber-400/30 bg-amber-400/10 p-3">
+          <span className="text-amber-400 text-sm">
+            On iOS, Google Fit syncs from Apple Health. Make sure your Health
+            app is up to date before connecting.
+          </span>
+        </div>
+      )}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="rounded-xl bg-pink-400/20 p-2.5">
+            <Activity className="h-5 w-5 text-pink-400" />
+          </div>
           <div>
-            <p className="text-xs font-semibold text-[#EF4444]">
-              Bluetooth Not Supported
-            </p>
-            <p className="text-[11px] text-[#888888] mt-0.5">
-              Bluetooth is not supported on iPhone and iPad. Please use Chrome
-              or Edge on Android or a desktop computer to connect your health
-              devices.
-            </p>
-          </div>
-        </div>
-      ) : isConnecting ? (
-        /* Connecting state */
-        <div className="flex items-center gap-3 p-3">
-          <Loader2
-            size={16}
-            className="text-[#f9a8c9] animate-spin flex-shrink-0"
-          />
-          <div>
-            <p className="text-xs text-[#f9a8c9] font-medium">
-              Connecting to device…
-            </p>
-            <p className="text-[10px] text-[#888888] mt-0.5">
-              Select your{" "}
-              <span className="text-[#f9a8c9] font-semibold">phone</span> from
-              the picker — not headphones or speakers
+            <p className="font-semibold text-white">Google Fit</p>
+            <p className="text-sm text-white/60">
+              {isAuthorized
+                ? lastSync
+                  ? `Last sync: ${lastSync.toLocaleTimeString()}`
+                  : "Connected"
+                : "Not connected"}
             </p>
           </div>
         </div>
-      ) : isConnected ? (
-        /* Connected state */
-        <div className="p-3 space-y-2">
-          {/* Header row */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 flex-wrap">
-              <PulsingDot color="#22C55E" />
-              <BluetoothConnected size={14} className="text-[#22C55E]" />
-              <p className="text-xs font-semibold text-[#22C55E]">
-                {deviceName ?? "Unknown Device"}
-              </p>
-              <DeviceTypeBadge type={deviceType} />
-              <span className="text-[10px] text-[#888888]">
-                · Live data active
-              </span>
-            </div>
-            <button
-              type="button"
-              data-ocid="bluetooth.disconnect.button"
-              onClick={onDisconnect}
-              className="flex items-center gap-1 text-[10px] text-[#888888] hover:text-[#EF4444] transition-colors flex-shrink-0"
-            >
-              <X size={12} />
-              Disconnect
-            </button>
-          </div>
+        {isAuthorized && (
+          <span className="rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 border border-green-500/30">
+            Connected
+          </span>
+        )}
+      </div>
 
-          {/* Data access row */}
-          <div className="flex flex-wrap gap-2 mt-1">
-            <span
-              className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full"
-              style={{
-                background:
-                  heartRate !== null
-                    ? "rgba(34,197,94,0.1)"
-                    : "rgba(255,255,255,0.05)",
-                color: heartRate !== null ? "#22C55E" : "#888",
-                border: `1px solid ${heartRate !== null ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.1)"}`,
-              }}
-            >
-              {heartRate !== null ? "✓" : "~"} Heart Rate
-            </span>
-            <span
-              className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full"
-              style={{
-                background:
-                  bloodPressure !== null
-                    ? "rgba(34,197,94,0.1)"
-                    : "rgba(255,255,255,0.05)",
-                color: bloodPressure !== null ? "#22C55E" : "#888",
-                border: `1px solid ${bloodPressure !== null ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.1)"}`,
-              }}
-            >
-              {bloodPressure !== null ? "✓" : "~"} Blood Pressure
-            </span>
-            <span
-              className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full"
-              style={{
-                background:
-                  steps !== null
-                    ? "rgba(34,197,94,0.1)"
-                    : "rgba(255,255,255,0.05)",
-                color: steps !== null ? "#22C55E" : "#888",
-                border: `1px solid ${steps !== null ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.1)"}`,
-              }}
-            >
-              {steps !== null ? "✓" : "~"} Steps
-            </span>
-          </div>
-
-          {/* Connected services */}
-          {connectedServices.length > 0 && (
-            <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="text-[9px] text-[#555] uppercase tracking-wider">
-                Live Services:
-              </span>
-              {connectedServices.map((svc) => (
-                <span
-                  key={svc}
-                  className="text-[10px] font-medium px-1.5 py-0.5 rounded"
-                  style={{
-                    background: "rgba(34,197,94,0.1)",
-                    color: "#22C55E",
-                    border: "1px solid rgba(34,197,94,0.2)",
-                  }}
-                >
-                  ✓ {svc}
-                </span>
-              ))}
-            </div>
-          )}
-          {/* Connected apps */}
-          {connectedApps.length > 0 && (
-            <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="text-[9px] text-[#555] uppercase tracking-wider">
-                Via:
-              </span>
-              {connectedApps.map((app) => (
-                <span
-                  key={app}
-                  className="text-[10px] font-medium px-1.5 py-0.5 rounded"
-                  style={{
-                    background: "rgba(249,168,201,0.1)",
-                    color: "#f9a8c9",
-                    border: "1px solid rgba(249,168,201,0.2)",
-                  }}
-                >
-                  {app}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-      ) : (
-        /* Disconnected state — phone-focused guidance */
-        <div className="p-4">
-          <div className="flex items-center gap-2 mb-3">
-            <Smartphone size={16} className="text-[#f9a8c9]" />
-            <p className="text-sm font-semibold text-[#ffffff]">
-              Connect Your Phone for Health Data
-            </p>
-          </div>
-
-          {/* Step-by-step guide */}
-          <div className="space-y-1.5 mb-3">
-            {[
-              {
-                n: 1,
-                text: "Open Google Fit or Samsung Health on your phone",
-                icon: "📱",
-              },
-              {
-                n: 2,
-                text: "Make sure your phone's Bluetooth is turned ON",
-                icon: "🔵",
-              },
-              {
-                n: 3,
-                text: "Tap the 'Connect Phone' button below",
-                icon: "👇",
-              },
-              {
-                n: 4,
-                text: "Select your phone or health device from the list",
-                icon: "✅",
-              },
-            ].map((step) => (
-              <div key={step.n} className="flex items-start gap-2">
-                <span
-                  className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold mt-0.5"
-                  style={{
-                    background: "rgba(249,168,201,0.2)",
-                    color: "#f9a8c9",
-                    border: "1px solid rgba(249,168,201,0.3)",
-                  }}
-                >
-                  {step.n}
-                </span>
-                <p className="text-[11px] text-[#cccccc] leading-relaxed">
-                  <span className="mr-1">{step.icon}</span>
-                  {step.text}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Error message */}
-          {hasError && errorMessage && (
-            <div
-              className="flex items-start gap-2 p-2 rounded-lg mb-3"
-              style={{
-                background: "rgba(239,68,68,0.08)",
-                border: "1px solid rgba(239,68,68,0.2)",
-              }}
-            >
-              <span className="text-[10px] text-[#EF4444] leading-relaxed">
-                ⚠ {errorMessage} — Make sure your phone's health app is open and
-                Bluetooth is enabled, then try again.
-              </span>
-            </div>
-          )}
-
-          {/* Action buttons */}
-          <div className="flex items-center gap-2 flex-wrap">
-            <button
-              type="button"
-              data-ocid="bluetooth.connect.button"
-              onClick={onConnect}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-[#0d0d0d] transition-all hover:brightness-110 active:scale-95"
-              style={{ background: "#f9a8c9" }}
-            >
-              <Smartphone size={13} />
-              Connect Phone
-            </button>
-            <button
-              type="button"
-              data-ocid="bluetooth.other.button"
-              onClick={onConnect}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-[11px] text-[#888888] hover:text-[#cccccc] transition-colors"
-              style={{
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(255,255,255,0.1)",
-              }}
-            >
-              <Bluetooth size={11} />
-              Other Device
-            </button>
-          </div>
-
-          <p className="text-[10px] text-[#888888] mt-2 leading-relaxed">
-            Make sure your phone's Bluetooth is on and your health app (Google
-            Fit / Samsung Health) is open
-          </p>
-          <p className="text-[9px] text-[#555] mt-1">
-            ℹ Works in Chrome or Edge on Android &amp; desktop only (HTTPS
-            required)
+      {/* No client ID configured guidance */}
+      {!isAuthorized && !clientIdConfigured && (
+        <div className="flex items-start gap-3 rounded-xl border border-blue-400/30 bg-blue-400/10 p-3">
+          <Info className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
+          <p className="text-sm text-blue-300">
+            To connect Google Fit, enter your Google OAuth Client ID in{" "}
+            <strong className="text-blue-200">
+              Admin Panel → AI Integration Settings
+            </strong>{" "}
+            first.
           </p>
         </div>
       )}
-    </div>
+
+      {errorMessage && (
+        <div className="rounded-xl border border-red-400/30 bg-red-400/10 p-3">
+          <p className="text-sm text-red-400">{errorMessage}</p>
+        </div>
+      )}
+      {(isFetching || isRedirecting) && (
+        <div className="flex items-center gap-2 text-sm text-white/60">
+          <div className="h-4 w-4 animate-spin rounded-full border-2 border-pink-400 border-t-transparent" />
+          {isRedirecting
+            ? "Redirecting to Google…"
+            : "Fetching from Google Fit…"}
+        </div>
+      )}
+      <div className="flex flex-wrap gap-3">
+        {!isAuthorized ? (
+          <button
+            type="button"
+            onClick={clientIdConfigured ? onRequestToken : undefined}
+            disabled={isRedirecting || !clientIdConfigured}
+            data-ocid="googlefit.connect.button"
+            className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-pink-500/25 transition-all hover:shadow-pink-500/40 hover:brightness-110 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isRedirecting ? (
+              <>
+                <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                Redirecting…
+              </>
+            ) : (
+              <>
+                <Wifi className="h-4 w-4" />
+                Connect Google Fit
+              </>
+            )}
+          </button>
+        ) : (
+          <>
+            <button
+              type="button"
+              onClick={onRefresh}
+              disabled={isFetching}
+              data-ocid="googlefit.refresh.button"
+              className="flex items-center gap-2 rounded-xl border border-pink-400/30 bg-pink-400/10 px-4 py-2 text-sm font-medium text-pink-400 transition-all hover:bg-pink-400/20 disabled:opacity-50"
+            >
+              <RefreshCw className="h-4 w-4" />
+              Refresh from Google Fit
+            </button>
+            <button
+              type="button"
+              onClick={onDisconnect}
+              data-ocid="googlefit.disconnect.button"
+              className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/60 transition-all hover:bg-white/10 hover:text-white"
+            >
+              <X className="h-4 w-4" />
+              Disconnect
+            </button>
+          </>
+        )}
+      </div>
+    </motion.div>
   );
 }
 
@@ -1573,31 +1348,85 @@ function LivingInsightCard() {
 export default function DashboardPage() {
   const navigate = useNavigate();
   const { actor } = useActor(createActor);
+
   const {
-    heartRate,
-    bloodPressure,
-    sleep,
-    steps,
-    connectionStatus,
-    deviceName,
-    deviceType,
-    connectedApps,
-    connectedServices,
-    isSupported,
-    isUnsupported,
-    errorMessage,
-    connect,
-    disconnect,
-    setSleep,
-    setHeartRate,
-    setBloodPressure,
-    hrLastRecorded,
-    bpLastRecorded,
-    sleepLastRecorded,
-    hrSource,
-    bpSource,
-    sleepSource,
-  } = useBluetoothHealth();
+    isAuthorized,
+    isFetching,
+    isRedirecting,
+    lastSync,
+    clientIdConfigured,
+    initiateOAuth,
+    fetchLast24HourData,
+    clearToken,
+  } = useGoogleFit();
+  const [fitErrorMessage, setFitErrorMessage] = useState<string | null>(null);
+  const [heartRate, setHeartRate] = useState<number | null>(null);
+  const [bloodPressureSystolic, setBloodPressureSystolic] = useState<
+    number | null
+  >(null);
+  const [bloodPressureDiastolic, setBloodPressureDiastolic] = useState<
+    number | null
+  >(null);
+  const [sleep, setSleep] = useState<number | null>(null);
+  const [steps, setSteps] = useState<number | null>(null);
+  const [hrSource, setHrSource] = useState<"Google Fit" | "Manual" | null>(
+    null,
+  );
+  const [bpSource, setBpSource] = useState<"Google Fit" | "Manual" | null>(
+    null,
+  );
+  const [sleepSource, setSleepSource] = useState<
+    "Google Fit" | "Manual" | null
+  >(null);
+  const [hrLastRecorded, setHrLastRecorded] = useState<Date | null>(null);
+  const [bpLastRecorded, setBpLastRecorded] = useState<Date | null>(null);
+  const [sleepLastRecorded, setSleepLastRecorded] = useState<Date | null>(null);
+
+  const handleGoogleFitRefresh = useCallback(async () => {
+    try {
+      setFitErrorMessage(null);
+      const data = await fetchLast24HourData();
+      const now = new Date();
+      if (data.heartRate !== null) {
+        setHeartRate(data.heartRate);
+        setHrSource("Google Fit");
+        setHrLastRecorded(now);
+      }
+      if (
+        data.bloodPressureSystolic !== null &&
+        data.bloodPressureDiastolic !== null
+      ) {
+        setBloodPressureSystolic(data.bloodPressureSystolic);
+        setBloodPressureDiastolic(data.bloodPressureDiastolic);
+        setBpSource("Google Fit");
+        setBpLastRecorded(now);
+      }
+      if (data.sleep !== null) {
+        setSleep(data.sleep);
+        setSleepSource("Google Fit");
+        setSleepLastRecorded(now);
+      }
+      if (data.steps !== null) {
+        setSteps(data.steps);
+      }
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      if (msg === "unauthorized") {
+        clearToken();
+        setFitErrorMessage("Google Fit session expired. Please reconnect.");
+      } else {
+        setFitErrorMessage(
+          "Could not fetch Google Fit data. You can still enter data manually.",
+        );
+      }
+    }
+  }, [fetchLast24HourData, clearToken]);
+
+  useEffect(() => {
+    if (isAuthorized) {
+      handleGoogleFitRefresh();
+    }
+  }, [isAuthorized, handleGoogleFitRefresh]);
 
   const userName = localStorage.getItem("ccx_user_name") || "user";
 
@@ -1629,6 +1458,8 @@ export default function DashboardPage() {
             window.dispatchEvent(new CustomEvent("careconnect_health_updated"));
             if (result.hr_latest !== undefined && result.hr_latest !== null) {
               setHeartRate(result.hr_latest);
+              setHrSource("Manual");
+              setHrLastRecorded(new Date());
             }
             if (
               result.systolic_latest !== undefined &&
@@ -1636,16 +1467,18 @@ export default function DashboardPage() {
               result.diastolic_latest !== undefined &&
               result.diastolic_latest !== null
             ) {
-              setBloodPressure({
-                systolic: result.systolic_latest,
-                diastolic: result.diastolic_latest,
-              });
+              setBloodPressureSystolic(result.systolic_latest);
+              setBloodPressureDiastolic(result.diastolic_latest);
+              setBpSource("Manual");
+              setBpLastRecorded(new Date());
             }
             if (
               result.sleep_latest !== undefined &&
               result.sleep_latest !== null
             ) {
               setSleep(result.sleep_latest);
+              setSleepSource("Manual");
+              setSleepLastRecorded(new Date());
             }
           }
         } else {
@@ -1654,14 +1487,19 @@ export default function DashboardPage() {
           if (saved) {
             try {
               const d = JSON.parse(saved);
-              if (d.hr_latest != null) setHeartRate(d.hr_latest);
-              if (d.systolic_latest != null && d.diastolic_latest != null) {
-                setBloodPressure({
-                  systolic: d.systolic_latest,
-                  diastolic: d.diastolic_latest,
-                });
+              if (d.hr_latest != null) {
+                setHeartRate(d.hr_latest);
+                setHrSource("Manual");
               }
-              if (d.sleep_latest != null) setSleep(d.sleep_latest);
+              if (d.systolic_latest != null && d.diastolic_latest != null) {
+                setBloodPressureSystolic(d.systolic_latest);
+                setBloodPressureDiastolic(d.diastolic_latest);
+                setBpSource("Manual");
+              }
+              if (d.sleep_latest != null) {
+                setSleep(d.sleep_latest);
+                setSleepSource("Manual");
+              }
             } catch {
               /* ignore */
             }
@@ -1673,14 +1511,19 @@ export default function DashboardPage() {
         if (saved) {
           try {
             const d = JSON.parse(saved);
-            if (d.hr_latest != null) setHeartRate(d.hr_latest);
-            if (d.systolic_latest != null && d.diastolic_latest != null) {
-              setBloodPressure({
-                systolic: d.systolic_latest,
-                diastolic: d.diastolic_latest,
-              });
+            if (d.hr_latest != null) {
+              setHeartRate(d.hr_latest);
+              setHrSource("Manual");
             }
-            if (d.sleep_latest != null) setSleep(d.sleep_latest);
+            if (d.systolic_latest != null && d.diastolic_latest != null) {
+              setBloodPressureSystolic(d.systolic_latest);
+              setBloodPressureDiastolic(d.diastolic_latest);
+              setBpSource("Manual");
+            }
+            if (d.sleep_latest != null) {
+              setSleep(d.sleep_latest);
+              setSleepSource("Manual");
+            }
           } catch {
             /* ignore */
           }
@@ -1689,12 +1532,14 @@ export default function DashboardPage() {
     };
     loadInitial();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [actor, setHeartRate, setBloodPressure, setSleep, userName]);
+  }, [actor, userName]);
 
   // ── Manual HR submit ──
   const handleHRManualInput = async (bpm: number | null) => {
     if (bpm === null) return;
     setHeartRate(bpm);
+    setHrSource("Manual");
+    setHrLastRecorded(new Date());
     persistHealthLocal({ hr_latest: bpm });
     try {
       if (actor) {
@@ -1722,7 +1567,10 @@ export default function DashboardPage() {
     bp: { systolic: number; diastolic: number } | null,
   ) => {
     if (!bp) return;
-    setBloodPressure(bp);
+    setBloodPressureSystolic(bp.systolic);
+    setBloodPressureDiastolic(bp.diastolic);
+    setBpSource("Manual");
+    setBpLastRecorded(new Date());
     persistHealthLocal({
       systolic_latest: bp.systolic,
       diastolic_latest: bp.diastolic,
@@ -1755,6 +1603,8 @@ export default function DashboardPage() {
   // ── Sleep change handler (triggers backend persist) ──
   const handleSleepInput = async (hours: number | null) => {
     setSleep(hours);
+    setSleepSource("Manual");
+    setSleepLastRecorded(new Date());
     if (hours === null) return;
     persistHealthLocal({ sleep_latest: hours });
     try {
@@ -1778,63 +1628,6 @@ export default function DashboardPage() {
     }
   };
 
-  // ── Bluetooth auto-persist with 60s debounce ──
-  const btDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  useEffect(() => {
-    if (connectionStatus !== "connected") return;
-    if (heartRate === null && bloodPressure === null) return;
-    if (btDebounceRef.current) clearTimeout(btDebounceRef.current);
-    btDebounceRef.current = setTimeout(async () => {
-      try {
-        const updates: Record<string, unknown> = {};
-        if (heartRate !== null) updates.hr_latest = heartRate;
-        if (bloodPressure) {
-          updates.systolic_latest = bloodPressure.systolic;
-          updates.diastolic_latest = bloodPressure.diastolic;
-        }
-        persistHealthLocal(updates);
-        if (actor) {
-          const calls: Promise<unknown>[] = [];
-          if (heartRate !== null)
-            calls.push(
-              actor.add_metric(userName, "HeartRate", heartRate, "Bluetooth"),
-            );
-          if (bloodPressure) {
-            calls.push(
-              actor.add_metric(
-                userName,
-                "SystolicBP",
-                bloodPressure.systolic,
-                "Bluetooth",
-              ),
-            );
-            calls.push(
-              actor.add_metric(
-                userName,
-                "DiastolicBP",
-                bloodPressure.diastolic,
-                "Bluetooth",
-              ),
-            );
-          }
-          await Promise.allSettled(calls);
-        }
-      } catch {
-        /* silent */
-      }
-    }, 60000);
-    return () => {
-      if (btDebounceRef.current) clearTimeout(btDebounceRef.current);
-    };
-  }, [
-    heartRate,
-    bloodPressure,
-    connectionStatus,
-    actor,
-    userName,
-    persistHealthLocal,
-  ]);
-
   const { moodAdaptive, focusModeActive } = useAI();
 
   const firstName = userName.split(" ")[0];
@@ -1845,8 +1638,6 @@ export default function DashboardPage() {
     month: "long",
     day: "numeric",
   });
-
-  const isConnected = connectionStatus === "connected";
 
   return (
     <div className="space-y-6 animate-fadeInUp">
@@ -1880,36 +1671,35 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Bluetooth Connection Panel */}
-          <BluetoothPanel
-            isSupported={isSupported}
-            isUnsupported={isUnsupported}
-            connectionStatus={connectionStatus}
-            deviceName={deviceName}
-            deviceType={deviceType}
-            connectedApps={connectedApps}
-            connectedServices={connectedServices}
-            heartRate={heartRate}
-            bloodPressure={bloodPressure}
-            steps={steps}
-            errorMessage={errorMessage}
-            onConnect={connect}
-            onDisconnect={disconnect}
+          {/* Google Fit Connection Panel */}
+          <GoogleFitPanel
+            isAuthorized={isAuthorized}
+            isFetching={isFetching}
+            isRedirecting={isRedirecting}
+            lastSync={lastSync}
+            clientIdConfigured={clientIdConfigured}
+            onRequestToken={initiateOAuth}
+            onRefresh={handleGoogleFitRefresh}
+            onDisconnect={clearToken}
+            errorMessage={fitErrorMessage}
           />
 
-          {/* Health Score Panel — below Bluetooth, above metric tiles */}
+          {/* Health Score Panel — below Google Fit, above metric tiles */}
           <HealthScorePanel
             heartRate={heartRate}
-            bloodPressure={bloodPressure}
+            bloodPressure={
+              bloodPressureSystolic !== null && bloodPressureDiastolic !== null
+                ? {
+                    systolic: bloodPressureSystolic,
+                    diastolic: bloodPressureDiastolic,
+                  }
+                : null
+            }
             sleep={sleep}
           />
 
           {/* Metric Tiles — 3 or 4 columns depending on steps availability */}
-          <div
-            className={`grid gap-3 mt-2 ${
-              steps !== null ? "grid-cols-4" : "grid-cols-3"
-            }`}
-          >
+          <div className="grid gap-3 mt-2 grid-cols-4">
             <HeartRateTile
               value={heartRate}
               lastRecorded={hrLastRecorded}
@@ -1917,15 +1707,14 @@ export default function DashboardPage() {
               onManualInput={handleHRManualInput}
             />
             <BloodPressureTile
-              systolic={bloodPressure?.systolic ?? null}
-              diastolic={bloodPressure?.diastolic ?? null}
+              systolic={bloodPressureSystolic}
+              diastolic={bloodPressureDiastolic}
               lastRecorded={bpLastRecorded}
               source={bpSource}
               onManualInput={handleBPManualInput}
             />
             <SleepTile
               value={sleep}
-              connected={isConnected}
               lastRecorded={sleepLastRecorded}
               source={sleepSource}
               onManualInput={handleSleepInput}

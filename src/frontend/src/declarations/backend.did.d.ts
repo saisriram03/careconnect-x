@@ -39,6 +39,11 @@ export interface PredictionInput {
   'hr_latest' : [] | [number],
   'systolic_avg_14d' : [] | [number],
 }
+export type RegisterResult = { 'ok' : null } |
+  { 'alreadyExists' : null };
+export type VerifyResult = { 'ok' : null } |
+  { 'wrongPassword' : null } |
+  { 'notFound' : null };
 export interface _SERVICE {
   'add_metric' : ActorMethod<
     [string, string, number, string],
@@ -50,6 +55,8 @@ export interface _SERVICE {
     [string, bigint, [] | [string]],
     Array<HealthMetric>
   >,
+  'registerUser' : ActorMethod<[string, string], RegisterResult>,
+  'verifyPassword' : ActorMethod<[string, string], VerifyResult>,
 }
 export declare const idlService: IDL.ServiceClass;
 export declare const idlInitArgs: IDL.Type[];

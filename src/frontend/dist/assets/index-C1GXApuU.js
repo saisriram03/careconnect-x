@@ -33658,7 +33658,7 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1x = [
+const __iconNode$1s = [
   [
     "path",
     {
@@ -33667,36 +33667,36 @@ const __iconNode$1x = [
     }
   ]
 ];
-const Activity = createLucideIcon("activity", __iconNode$1x);
+const Activity = createLucideIcon("activity", __iconNode$1s);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1w = [
+const __iconNode$1r = [
   ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
   ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1w);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1r);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1v = [
+const __iconNode$1q = [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
 ];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$1v);
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$1q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1u = [
+const __iconNode$1p = [
   ["path", { d: "M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5", key: "1u7htd" }],
   ["path", { d: "M15 12h.01", key: "1k8ypt" }],
   [
@@ -33708,14 +33708,14 @@ const __iconNode$1u = [
   ],
   ["path", { d: "M9 12h.01", key: "157uk2" }]
 ];
-const Baby = createLucideIcon("baby", __iconNode$1u);
+const Baby = createLucideIcon("baby", __iconNode$1p);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1t = [
+const __iconNode$1o = [
   ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
   [
     "path",
@@ -33725,46 +33725,14 @@ const __iconNode$1t = [
     }
   ]
 ];
-const Bell = createLucideIcon("bell", __iconNode$1t);
+const Bell = createLucideIcon("bell", __iconNode$1o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1s = [
-  ["path", { d: "m7 7 10 10-5 5V2l5 5L7 17", key: "1q5490" }],
-  ["line", { x1: "18", x2: "21", y1: "12", y2: "12", key: "1rsjjs" }],
-  ["line", { x1: "3", x2: "6", y1: "12", y2: "12", key: "11yl8c" }]
-];
-const BluetoothConnected = createLucideIcon("bluetooth-connected", __iconNode$1s);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$1r = [
-  ["path", { d: "m17 17-5 5V12l-5 5", key: "v5aci6" }],
-  ["path", { d: "m2 2 20 20", key: "1ooewy" }],
-  ["path", { d: "M14.5 9.5 17 7l-5-5v4.5", key: "1kddfz" }]
-];
-const BluetoothOff = createLucideIcon("bluetooth-off", __iconNode$1r);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$1q = [["path", { d: "m7 7 10 10-5 5V2l5 5L7 17", key: "1q5490" }]];
-const Bluetooth = createLucideIcon("bluetooth", __iconNode$1q);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$1p = [
+const __iconNode$1n = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   [
     "path",
@@ -33774,14 +33742,14 @@ const __iconNode$1p = [
     }
   ]
 ];
-const BookOpen = createLucideIcon("book-open", __iconNode$1p);
+const BookOpen = createLucideIcon("book-open", __iconNode$1n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1o = [
+const __iconNode$1m = [
   ["path", { d: "M12 8V4H8", key: "hb8ula" }],
   ["rect", { width: "16", height: "12", x: "4", y: "8", rx: "2", key: "enze0r" }],
   ["path", { d: "M2 14h2", key: "vft8re" }],
@@ -33789,14 +33757,14 @@ const __iconNode$1o = [
   ["path", { d: "M15 13v2", key: "1xurst" }],
   ["path", { d: "M9 13v2", key: "rq6x2g" }]
 ];
-const Bot = createLucideIcon("bot", __iconNode$1o);
+const Bot = createLucideIcon("bot", __iconNode$1m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1n = [
+const __iconNode$1l = [
   [
     "path",
     {
@@ -33817,14 +33785,14 @@ const __iconNode$1n = [
   ["circle", { cx: "20", cy: "21", r: ".5", key: "yhc1fs" }],
   ["circle", { cx: "20", cy: "8", r: ".5", key: "1e43v0" }]
 ];
-const BrainCircuit = createLucideIcon("brain-circuit", __iconNode$1n);
+const BrainCircuit = createLucideIcon("brain-circuit", __iconNode$1l);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1m = [
+const __iconNode$1k = [
   [
     "path",
     {
@@ -33847,14 +33815,14 @@ const __iconNode$1m = [
   ["path", { d: "M6 18a4 4 0 0 1-1.967-.516", key: "2e4loj" }],
   ["path", { d: "M19.967 17.484A4 4 0 0 1 18 18", key: "159ez6" }]
 ];
-const Brain = createLucideIcon("brain", __iconNode$1m);
+const Brain = createLucideIcon("brain", __iconNode$1k);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1l = [
+const __iconNode$1j = [
   ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
   ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
   ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
@@ -33863,14 +33831,14 @@ const __iconNode$1l = [
   ["path", { d: "M10 14h4", key: "kelpxr" }],
   ["path", { d: "M10 18h4", key: "1ulq68" }]
 ];
-const Building2 = createLucideIcon("building-2", __iconNode$1l);
+const Building2 = createLucideIcon("building-2", __iconNode$1j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1k = [
+const __iconNode$1i = [
   ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2", key: "76otgf" }],
   ["path", { d: "M9 22v-4h6v4", key: "r93iot" }],
   ["path", { d: "M8 6h.01", key: "1dz90k" }],
@@ -33883,14 +33851,14 @@ const __iconNode$1k = [
   ["path", { d: "M8 10h.01", key: "19clt8" }],
   ["path", { d: "M8 14h.01", key: "6423bh" }]
 ];
-const Building = createLucideIcon("building", __iconNode$1k);
+const Building = createLucideIcon("building", __iconNode$1i);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1j = [
+const __iconNode$1h = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
@@ -33902,27 +33870,27 @@ const __iconNode$1j = [
   ["path", { d: "M12 18h.01", key: "mhygvu" }],
   ["path", { d: "M16 18h.01", key: "kzsmim" }]
 ];
-const CalendarDays = createLucideIcon("calendar-days", __iconNode$1j);
+const CalendarDays = createLucideIcon("calendar-days", __iconNode$1h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1i = [
+const __iconNode$1g = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
   ["path", { d: "M3 10h18", key: "8toen8" }]
 ];
-const Calendar$1 = createLucideIcon("calendar", __iconNode$1i);
+const Calendar$1 = createLucideIcon("calendar", __iconNode$1g);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1h = [
+const __iconNode$1f = [
   [
     "path",
     {
@@ -33932,81 +33900,58 @@ const __iconNode$1h = [
   ],
   ["circle", { cx: "12", cy: "13", r: "3", key: "1vg3eu" }]
 ];
-const Camera = createLucideIcon("camera", __iconNode$1h);
+const Camera = createLucideIcon("camera", __iconNode$1f);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1g = [
+const __iconNode$1e = [
   ["path", { d: "M18 6 7 17l-5-5", key: "116fxf" }],
   ["path", { d: "m22 10-7.5 7.5L13 16", key: "ke71qq" }]
 ];
-const CheckCheck = createLucideIcon("check-check", __iconNode$1g);
+const CheckCheck = createLucideIcon("check-check", __iconNode$1e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1f = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$1f);
+const __iconNode$1d = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$1d);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1e = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$1e);
+const __iconNode$1c = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$1c);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1d = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-const ChevronLeft = createLucideIcon("chevron-left", __iconNode$1d);
+const __iconNode$1b = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$1b);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1c = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$1c);
+const __iconNode$1a = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$1a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1b = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$1b);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$1a = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
-  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
-];
-const CircleAlert = createLucideIcon("circle-alert", __iconNode$1a);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$19 = [
-  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-];
-const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$19);
+const __iconNode$19 = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$19);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34015,9 +33960,10 @@ const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$19);
  */
 const __iconNode$18 = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
+  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
 ];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$18);
+const CircleAlert = createLucideIcon("circle-alert", __iconNode$18);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34025,11 +33971,10 @@ const CircleCheck = createLucideIcon("circle-check", __iconNode$18);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$17 = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m15 9-6 6", key: "1uzhvr" }],
-  ["path", { d: "m9 9 6 6", key: "z0biqf" }]
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
 ];
-const CircleX = createLucideIcon("circle-x", __iconNode$17);
+const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$17);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34038,9 +33983,9 @@ const CircleX = createLucideIcon("circle-x", __iconNode$17);
  */
 const __iconNode$16 = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Clock = createLucideIcon("clock", __iconNode$16);
+const CircleCheck = createLucideIcon("circle-check", __iconNode$16);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34048,6 +33993,29 @@ const Clock = createLucideIcon("clock", __iconNode$16);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$15 = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m15 9-6 6", key: "1uzhvr" }],
+  ["path", { d: "m9 9 6 6", key: "z0biqf" }]
+];
+const CircleX = createLucideIcon("circle-x", __iconNode$15);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$14 = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
+];
+const Clock = createLucideIcon("clock", __iconNode$14);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$13 = [
   [
     "path",
     {
@@ -34057,25 +34025,25 @@ const __iconNode$15 = [
   ],
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }]
 ];
-const Compass = createLucideIcon("compass", __iconNode$15);
+const Compass = createLucideIcon("compass", __iconNode$13);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$14 = [
+const __iconNode$12 = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 18a6 6 0 0 0 0-12v12z", key: "j4l70d" }]
 ];
-const Contrast = createLucideIcon("contrast", __iconNode$14);
+const Contrast = createLucideIcon("contrast", __iconNode$12);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$13 = [
+const __iconNode$11 = [
   ["path", { d: "M12 20v2", key: "1lh1kg" }],
   ["path", { d: "M12 2v2", key: "tus03m" }],
   ["path", { d: "M17 20v2", key: "1rnc9c" }],
@@ -34091,26 +34059,26 @@ const __iconNode$13 = [
   ["rect", { x: "4", y: "4", width: "16", height: "16", rx: "2", key: "1vbyd7" }],
   ["rect", { x: "8", y: "8", width: "8", height: "8", rx: "1", key: "z9xiuo" }]
 ];
-const Cpu = createLucideIcon("cpu", __iconNode$13);
+const Cpu = createLucideIcon("cpu", __iconNode$11);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$12 = [
+const __iconNode$10 = [
   ["ellipse", { cx: "12", cy: "5", rx: "9", ry: "3", key: "msslwz" }],
   ["path", { d: "M3 5V19A9 3 0 0 0 21 19V5", key: "1wlel7" }],
   ["path", { d: "M3 12A9 3 0 0 0 21 12", key: "mv7ke4" }]
 ];
-const Database = createLucideIcon("database", __iconNode$12);
+const Database = createLucideIcon("database", __iconNode$10);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$11 = [
+const __iconNode$$ = [
   [
     "path",
     {
@@ -34129,26 +34097,26 @@ const __iconNode$11 = [
   ],
   ["path", { d: "m9.6 14.4 4.8-4.8", key: "6umqxw" }]
 ];
-const Dumbbell = createLucideIcon("dumbbell", __iconNode$11);
+const Dumbbell = createLucideIcon("dumbbell", __iconNode$$);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$10 = [
+const __iconNode$_ = [
   ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
   ["path", { d: "M10 14 21 3", key: "gplh6r" }],
   ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
 ];
-const ExternalLink = createLucideIcon("external-link", __iconNode$10);
+const ExternalLink = createLucideIcon("external-link", __iconNode$_);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$$ = [
+const __iconNode$Z = [
   [
     "path",
     {
@@ -34166,14 +34134,14 @@ const __iconNode$$ = [
   ],
   ["path", { d: "m2 2 20 20", key: "1ooewy" }]
 ];
-const EyeOff = createLucideIcon("eye-off", __iconNode$$);
+const EyeOff = createLucideIcon("eye-off", __iconNode$Z);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$_ = [
+const __iconNode$Y = [
   [
     "path",
     {
@@ -34183,33 +34151,7 @@ const __iconNode$_ = [
   ],
   ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
 ];
-const Eye = createLucideIcon("eye", __iconNode$_);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$Z = [
-  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
-  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
-  ["path", { d: "m9 15 2 2 4-4", key: "1grp1n" }]
-];
-const FileCheck = createLucideIcon("file-check", __iconNode$Z);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$Y = [
-  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
-  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
-  ["path", { d: "M10 9H8", key: "b1mrlr" }],
-  ["path", { d: "M16 13H8", key: "t4e002" }],
-  ["path", { d: "M16 17H8", key: "z1uh3a" }]
-];
-const FileText = createLucideIcon("file-text", __iconNode$Y);
+const Eye = createLucideIcon("eye", __iconNode$Y);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34217,6 +34159,32 @@ const FileText = createLucideIcon("file-text", __iconNode$Y);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$X = [
+  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
+  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
+  ["path", { d: "m9 15 2 2 4-4", key: "1grp1n" }]
+];
+const FileCheck = createLucideIcon("file-check", __iconNode$X);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$W = [
+  ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
+  ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
+  ["path", { d: "M10 9H8", key: "b1mrlr" }],
+  ["path", { d: "M16 13H8", key: "t4e002" }],
+  ["path", { d: "M16 17H8", key: "z1uh3a" }]
+];
+const FileText = createLucideIcon("file-text", __iconNode$W);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$V = [
   [
     "path",
     {
@@ -34227,28 +34195,28 @@ const __iconNode$X = [
   ["path", { d: "M6.453 15h11.094", key: "3shlmq" }],
   ["path", { d: "M8.5 2h7", key: "csnxdl" }]
 ];
-const FlaskConical = createLucideIcon("flask-conical", __iconNode$X);
+const FlaskConical = createLucideIcon("flask-conical", __iconNode$V);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$W = [
+const __iconNode$U = [
   ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }],
   ["path", { d: "M3 7V5a2 2 0 0 1 2-2h2", key: "aa7l1z" }],
   ["path", { d: "M17 3h2a2 2 0 0 1 2 2v2", key: "4qcy5o" }],
   ["path", { d: "M21 17v2a2 2 0 0 1-2 2h-2", key: "6vwrx8" }],
   ["path", { d: "M7 21H5a2 2 0 0 1-2-2v-2", key: "ioqczr" }]
 ];
-const Focus = createLucideIcon("focus", __iconNode$W);
+const Focus = createLucideIcon("focus", __iconNode$U);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$V = [
+const __iconNode$T = [
   [
     "path",
     {
@@ -34266,38 +34234,7 @@ const __iconNode$V = [
   ["path", { d: "M16 17h4", key: "1dejxt" }],
   ["path", { d: "M4 13h4", key: "1bwh8b" }]
 ];
-const Footprints = createLucideIcon("footprints", __iconNode$V);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$U = [
-  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }],
-  ["path", { d: "M3 9h18", key: "1pudct" }],
-  ["path", { d: "M3 15h18", key: "5xshup" }],
-  ["path", { d: "M9 3v18", key: "fh3hqa" }],
-  ["path", { d: "M15 3v18", key: "14nvp0" }]
-];
-const Grid3x3 = createLucideIcon("grid-3x3", __iconNode$U);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$T = [
-  [
-    "path",
-    {
-      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
-      key: "c3ymky"
-    }
-  ],
-  ["path", { d: "M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27", key: "1uw2ng" }]
-];
-const HeartPulse = createLucideIcon("heart-pulse", __iconNode$T);
+const Footprints = createLucideIcon("footprints", __iconNode$T);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34305,15 +34242,13 @@ const HeartPulse = createLucideIcon("heart-pulse", __iconNode$T);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$S = [
-  [
-    "path",
-    {
-      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
-      key: "c3ymky"
-    }
-  ]
+  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }],
+  ["path", { d: "M3 9h18", key: "1pudct" }],
+  ["path", { d: "M3 15h18", key: "5xshup" }],
+  ["path", { d: "M9 3v18", key: "fh3hqa" }],
+  ["path", { d: "M15 3v18", key: "14nvp0" }]
 ];
-const Heart = createLucideIcon("heart", __iconNode$S);
+const Grid3x3 = createLucideIcon("grid-3x3", __iconNode$S);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34324,13 +34259,13 @@ const __iconNode$R = [
   [
     "path",
     {
-      d: "M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z",
-      key: "1s6t7t"
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
     }
   ],
-  ["circle", { cx: "16.5", cy: "7.5", r: ".5", fill: "currentColor", key: "w0ekpg" }]
+  ["path", { d: "M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27", key: "1uw2ng" }]
 ];
-const KeyRound = createLucideIcon("key-round", __iconNode$R);
+const HeartPulse = createLucideIcon("heart-pulse", __iconNode$R);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34341,13 +34276,12 @@ const __iconNode$Q = [
   [
     "path",
     {
-      d: "M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z",
-      key: "1pdavp"
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
     }
-  ],
-  ["path", { d: "M20.054 15.987H3.946", key: "14rxg9" }]
+  ]
 ];
-const Laptop = createLucideIcon("laptop", __iconNode$Q);
+const Heart = createLucideIcon("heart", __iconNode$Q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34355,6 +34289,52 @@ const Laptop = createLucideIcon("laptop", __iconNode$Q);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$P = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 16v-4", key: "1dtifu" }],
+  ["path", { d: "M12 8h.01", key: "e9boi3" }]
+];
+const Info = createLucideIcon("info", __iconNode$P);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$O = [
+  [
+    "path",
+    {
+      d: "M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z",
+      key: "1s6t7t"
+    }
+  ],
+  ["circle", { cx: "16.5", cy: "7.5", r: ".5", fill: "currentColor", key: "w0ekpg" }]
+];
+const KeyRound = createLucideIcon("key-round", __iconNode$O);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$N = [
+  [
+    "path",
+    {
+      d: "M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z",
+      key: "1pdavp"
+    }
+  ],
+  ["path", { d: "M20.054 15.987H3.946", key: "14rxg9" }]
+];
+const Laptop = createLucideIcon("laptop", __iconNode$N);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$M = [
   [
     "path",
     {
@@ -34377,59 +34357,20 @@ const __iconNode$P = [
     }
   ]
 ];
-const Layers = createLucideIcon("layers", __iconNode$P);
+const Layers = createLucideIcon("layers", __iconNode$M);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$O = [
+const __iconNode$L = [
   ["rect", { width: "7", height: "9", x: "3", y: "3", rx: "1", key: "10lvy0" }],
   ["rect", { width: "7", height: "5", x: "14", y: "3", rx: "1", key: "16une8" }],
   ["rect", { width: "7", height: "9", x: "14", y: "12", rx: "1", key: "1hutg5" }],
   ["rect", { width: "7", height: "5", x: "3", y: "16", rx: "1", key: "ldoo1y" }]
 ];
-const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$O);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$N = [
-  ["rect", { width: "7", height: "7", x: "3", y: "3", rx: "1", key: "1g98yp" }],
-  ["rect", { width: "7", height: "7", x: "14", y: "3", rx: "1", key: "6d4xhi" }],
-  ["rect", { width: "7", height: "7", x: "14", y: "14", rx: "1", key: "nxv5o0" }],
-  ["rect", { width: "7", height: "7", x: "3", y: "14", rx: "1", key: "1bb6yr" }]
-];
-const LayoutGrid = createLucideIcon("layout-grid", __iconNode$N);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$M = [
-  [
-    "path",
-    {
-      d: "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5",
-      key: "1gvzjb"
-    }
-  ],
-  ["path", { d: "M9 18h6", key: "x1upvd" }],
-  ["path", { d: "M10 22h4", key: "ceow96" }]
-];
-const Lightbulb = createLucideIcon("lightbulb", __iconNode$M);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$L = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$L);
+const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$L);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34437,11 +34378,12 @@ const LoaderCircle = createLucideIcon("loader-circle", __iconNode$L);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$K = [
-  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
-  ["path", { d: "M21 12H9", key: "dn1m92" }],
-  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
+  ["rect", { width: "7", height: "7", x: "3", y: "3", rx: "1", key: "1g98yp" }],
+  ["rect", { width: "7", height: "7", x: "14", y: "3", rx: "1", key: "6d4xhi" }],
+  ["rect", { width: "7", height: "7", x: "14", y: "14", rx: "1", key: "nxv5o0" }],
+  ["rect", { width: "7", height: "7", x: "3", y: "14", rx: "1", key: "1bb6yr" }]
 ];
-const LogOut = createLucideIcon("log-out", __iconNode$K);
+const LayoutGrid = createLucideIcon("layout-grid", __iconNode$K);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34452,23 +34394,22 @@ const __iconNode$J = [
   [
     "path",
     {
-      d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
-      key: "1r0f0z"
+      d: "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5",
+      key: "1gvzjb"
     }
   ],
-  ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
+  ["path", { d: "M9 18h6", key: "x1upvd" }],
+  ["path", { d: "M10 22h4", key: "ceow96" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$J);
+const Lightbulb = createLucideIcon("lightbulb", __iconNode$J);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$I = [
-  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
-];
-const MessageCircle = createLucideIcon("message-circle", __iconNode$I);
+const __iconNode$I = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$I);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34476,14 +34417,11 @@ const MessageCircle = createLucideIcon("message-circle", __iconNode$I);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$H = [
-  ["line", { x1: "2", x2: "22", y1: "2", y2: "22", key: "a6p6uj" }],
-  ["path", { d: "M18.89 13.23A7.12 7.12 0 0 0 19 12v-2", key: "80xlxr" }],
-  ["path", { d: "M5 10v2a7 7 0 0 0 12 5", key: "p2k8kg" }],
-  ["path", { d: "M15 9.34V5a3 3 0 0 0-5.68-1.33", key: "1gzdoj" }],
-  ["path", { d: "M9 9v3a3 3 0 0 0 5.12 2.12", key: "r2i35w" }],
-  ["line", { x1: "12", x2: "12", y1: "19", y2: "22", key: "x3vr5v" }]
+  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
+  ["path", { d: "M21 12H9", key: "dn1m92" }],
+  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
 ];
-const MicOff = createLucideIcon("mic-off", __iconNode$H);
+const LogOut = createLucideIcon("log-out", __iconNode$H);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34491,11 +34429,16 @@ const MicOff = createLucideIcon("mic-off", __iconNode$H);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$G = [
-  ["path", { d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", key: "131961" }],
-  ["path", { d: "M19 10v2a7 7 0 0 1-14 0v-2", key: "1vc78b" }],
-  ["line", { x1: "12", x2: "12", y1: "19", y2: "22", key: "x3vr5v" }]
+  [
+    "path",
+    {
+      d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
+      key: "1r0f0z"
+    }
+  ],
+  ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const Mic = createLucideIcon("mic", __iconNode$G);
+const MapPin = createLucideIcon("map-pin", __iconNode$G);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34503,12 +34446,9 @@ const Mic = createLucideIcon("mic", __iconNode$G);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$F = [
-  ["path", { d: "m14 10 7-7", key: "oa77jy" }],
-  ["path", { d: "M20 10h-6V4", key: "mjg0md" }],
-  ["path", { d: "m3 21 7-7", key: "tjx5ai" }],
-  ["path", { d: "M4 14h6v6", key: "rmj7iw" }]
+  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
 ];
-const Minimize2 = createLucideIcon("minimize-2", __iconNode$F);
+const MessageCircle = createLucideIcon("message-circle", __iconNode$F);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34516,9 +34456,14 @@ const Minimize2 = createLucideIcon("minimize-2", __iconNode$F);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$E = [
-  ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
+  ["line", { x1: "2", x2: "22", y1: "2", y2: "22", key: "a6p6uj" }],
+  ["path", { d: "M18.89 13.23A7.12 7.12 0 0 0 19 12v-2", key: "80xlxr" }],
+  ["path", { d: "M5 10v2a7 7 0 0 0 12 5", key: "p2k8kg" }],
+  ["path", { d: "M15 9.34V5a3 3 0 0 0-5.68-1.33", key: "1gzdoj" }],
+  ["path", { d: "M9 9v3a3 3 0 0 0 5.12 2.12", key: "r2i35w" }],
+  ["line", { x1: "12", x2: "12", y1: "19", y2: "22", key: "x3vr5v" }]
 ];
-const Moon = createLucideIcon("moon", __iconNode$E);
+const MicOff = createLucideIcon("mic-off", __iconNode$E);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34526,9 +34471,11 @@ const Moon = createLucideIcon("moon", __iconNode$E);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$D = [
-  ["polygon", { points: "3 11 22 2 13 21 11 13 3 11", key: "1ltx0t" }]
+  ["path", { d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", key: "131961" }],
+  ["path", { d: "M19 10v2a7 7 0 0 1-14 0v-2", key: "1vc78b" }],
+  ["line", { x1: "12", x2: "12", y1: "19", y2: "22", key: "x3vr5v" }]
 ];
-const Navigation = createLucideIcon("navigation", __iconNode$D);
+const Mic = createLucideIcon("mic", __iconNode$D);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34536,13 +34483,12 @@ const Navigation = createLucideIcon("navigation", __iconNode$D);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$C = [
-  ["rect", { x: "16", y: "16", width: "6", height: "6", rx: "1", key: "4q2zg0" }],
-  ["rect", { x: "2", y: "16", width: "6", height: "6", rx: "1", key: "8cvhb9" }],
-  ["rect", { x: "9", y: "2", width: "6", height: "6", rx: "1", key: "1egb70" }],
-  ["path", { d: "M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3", key: "1jsf9p" }],
-  ["path", { d: "M12 12V8", key: "2874zd" }]
+  ["path", { d: "m14 10 7-7", key: "oa77jy" }],
+  ["path", { d: "M20 10h-6V4", key: "mjg0md" }],
+  ["path", { d: "m3 21 7-7", key: "tjx5ai" }],
+  ["path", { d: "M4 14h6v6", key: "rmj7iw" }]
 ];
-const Network = createLucideIcon("network", __iconNode$C);
+const Minimize2 = createLucideIcon("minimize-2", __iconNode$C);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34550,6 +34496,40 @@ const Network = createLucideIcon("network", __iconNode$C);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$B = [
+  ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
+];
+const Moon = createLucideIcon("moon", __iconNode$B);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$A = [
+  ["polygon", { points: "3 11 22 2 13 21 11 13 3 11", key: "1ltx0t" }]
+];
+const Navigation = createLucideIcon("navigation", __iconNode$A);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$z = [
+  ["rect", { x: "16", y: "16", width: "6", height: "6", rx: "1", key: "4q2zg0" }],
+  ["rect", { x: "2", y: "16", width: "6", height: "6", rx: "1", key: "8cvhb9" }],
+  ["rect", { x: "9", y: "2", width: "6", height: "6", rx: "1", key: "1egb70" }],
+  ["path", { d: "M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3", key: "1jsf9p" }],
+  ["path", { d: "M12 12V8", key: "2874zd" }]
+];
+const Network = createLucideIcon("network", __iconNode$z);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$y = [
   [
     "path",
     {
@@ -34561,34 +34541,14 @@ const __iconNode$B = [
   ["polyline", { points: "3.29 7 12 12 20.71 7", key: "ousv84" }],
   ["path", { d: "m7.5 4.27 9 5.15", key: "1c824w" }]
 ];
-const Package = createLucideIcon("package", __iconNode$B);
+const Package = createLucideIcon("package", __iconNode$y);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$A = [
-  [
-    "path",
-    {
-      d: "M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z",
-      key: "e79jfc"
-    }
-  ],
-  ["circle", { cx: "13.5", cy: "6.5", r: ".5", fill: "currentColor", key: "1okk4w" }],
-  ["circle", { cx: "17.5", cy: "10.5", r: ".5", fill: "currentColor", key: "f64h9f" }],
-  ["circle", { cx: "6.5", cy: "12.5", r: ".5", fill: "currentColor", key: "qy21gx" }],
-  ["circle", { cx: "8.5", cy: "7.5", r: ".5", fill: "currentColor", key: "fotxhn" }]
-];
-const Palette = createLucideIcon("palette", __iconNode$A);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$z = [
+const __iconNode$x = [
   [
     "path",
     {
@@ -34597,32 +34557,7 @@ const __iconNode$z = [
     }
   ]
 ];
-const Phone = createLucideIcon("phone", __iconNode$z);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$y = [
-  [
-    "path",
-    { d: "m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z", key: "wa1lgi" }
-  ],
-  ["path", { d: "m8.5 8.5 7 7", key: "rvfmvr" }]
-];
-const Pill = createLucideIcon("pill", __iconNode$y);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$x = [
-  ["path", { d: "M5 12h14", key: "1ays0h" }],
-  ["path", { d: "M12 5v14", key: "s699le" }]
-];
-const Plus = createLucideIcon("plus", __iconNode$x);
+const Phone = createLucideIcon("phone", __iconNode$x);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34630,12 +34565,13 @@ const Plus = createLucideIcon("plus", __iconNode$x);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$w = [
-  ["path", { d: "M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "14sxne" }],
-  ["path", { d: "M3 3v5h5", key: "1xhq8a" }],
-  ["path", { d: "M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16", key: "1hlbsb" }],
-  ["path", { d: "M16 16h5v5", key: "ccwih5" }]
+  [
+    "path",
+    { d: "m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z", key: "wa1lgi" }
+  ],
+  ["path", { d: "m8.5 8.5 7 7", key: "rvfmvr" }]
 ];
-const RefreshCcw = createLucideIcon("refresh-ccw", __iconNode$w);
+const Pill = createLucideIcon("pill", __iconNode$w);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34643,12 +34579,10 @@ const RefreshCcw = createLucideIcon("refresh-ccw", __iconNode$w);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$v = [
-  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
-  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
-  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
-  ["path", { d: "M8 16H3v5", key: "1cv678" }]
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
 ];
-const RefreshCw = createLucideIcon("refresh-cw", __iconNode$v);
+const Plus = createLucideIcon("plus", __iconNode$v);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34656,10 +34590,12 @@ const RefreshCw = createLucideIcon("refresh-cw", __iconNode$v);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$u = [
-  ["path", { d: "M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "1357e3" }],
-  ["path", { d: "M3 3v5h5", key: "1xhq8a" }]
+  ["path", { d: "M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "14sxne" }],
+  ["path", { d: "M3 3v5h5", key: "1xhq8a" }],
+  ["path", { d: "M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16", key: "1hlbsb" }],
+  ["path", { d: "M16 16h5v5", key: "ccwih5" }]
 ];
-const RotateCcw = createLucideIcon("rotate-ccw", __iconNode$u);
+const RefreshCcw = createLucideIcon("refresh-ccw", __iconNode$u);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34667,6 +34603,30 @@ const RotateCcw = createLucideIcon("rotate-ccw", __iconNode$u);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$t = [
+  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
+  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
+  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
+  ["path", { d: "M8 16H3v5", key: "1cv678" }]
+];
+const RefreshCw = createLucideIcon("refresh-cw", __iconNode$t);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$s = [
+  ["path", { d: "M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "1357e3" }],
+  ["path", { d: "M3 3v5h5", key: "1xhq8a" }]
+];
+const RotateCcw = createLucideIcon("rotate-ccw", __iconNode$s);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$r = [
   ["path", { d: "M7 21h10", key: "1b0cd5" }],
   ["path", { d: "M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z", key: "4rw317" }],
   [
@@ -34679,35 +34639,7 @@ const __iconNode$t = [
   ["path", { d: "m13 12 4-4", key: "1hckqy" }],
   ["path", { d: "M10.9 7.25A3.99 3.99 0 0 0 4 10c0 .73.2 1.41.54 2", key: "1p4srx" }]
 ];
-const Salad = createLucideIcon("salad", __iconNode$t);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$s = [
-  ["path", { d: "m21 21-4.34-4.34", key: "14j7rj" }],
-  ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }]
-];
-const Search = createLucideIcon("search", __iconNode$s);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$r = [
-  [
-    "path",
-    {
-      d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
-      key: "1ffxy3"
-    }
-  ],
-  ["path", { d: "m21.854 2.147-10.94 10.939", key: "12cjpa" }]
-];
-const Send = createLucideIcon("send", __iconNode$r);
+const Salad = createLucideIcon("salad", __iconNode$r);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34715,16 +34647,10 @@ const Send = createLucideIcon("send", __iconNode$r);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$q = [
-  [
-    "path",
-    {
-      d: "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z",
-      key: "1qme2f"
-    }
-  ],
-  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+  ["path", { d: "m21 21-4.34-4.34", key: "14j7rj" }],
+  ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }]
 ];
-const Settings = createLucideIcon("settings", __iconNode$q);
+const Search = createLucideIcon("search", __iconNode$q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34735,14 +34661,13 @@ const __iconNode$p = [
   [
     "path",
     {
-      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
-      key: "oel41y"
+      d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
+      key: "1ffxy3"
     }
   ],
-  ["path", { d: "M12 8v4", key: "1got3b" }],
-  ["path", { d: "M12 16h.01", key: "1drbdi" }]
+  ["path", { d: "m21.854 2.147-10.94 10.939", key: "12cjpa" }]
 ];
-const ShieldAlert = createLucideIcon("shield-alert", __iconNode$p);
+const Send = createLucideIcon("send", __iconNode$p);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34753,13 +34678,13 @@ const __iconNode$o = [
   [
     "path",
     {
-      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
-      key: "oel41y"
+      d: "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z",
+      key: "1qme2f"
     }
   ],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
 ];
-const ShieldCheck = createLucideIcon("shield-check", __iconNode$o);
+const Settings = createLucideIcon("settings", __iconNode$o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34774,10 +34699,10 @@ const __iconNode$n = [
       key: "oel41y"
     }
   ],
-  ["path", { d: "M9 12h6", key: "1c52cq" }],
-  ["path", { d: "M12 9v6", key: "199k2o" }]
+  ["path", { d: "M12 8v4", key: "1got3b" }],
+  ["path", { d: "M12 16h.01", key: "1drbdi" }]
 ];
-const ShieldPlus = createLucideIcon("shield-plus", __iconNode$n);
+const ShieldAlert = createLucideIcon("shield-alert", __iconNode$n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34791,9 +34716,10 @@ const __iconNode$m = [
       d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
       key: "oel41y"
     }
-  ]
+  ],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Shield = createLucideIcon("shield", __iconNode$m);
+const ShieldCheck = createLucideIcon("shield-check", __iconNode$m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34801,11 +34727,17 @@ const Shield = createLucideIcon("shield", __iconNode$m);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$l = [
-  ["path", { d: "M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z", key: "hou9p0" }],
-  ["path", { d: "M3 6h18", key: "d0wm0j" }],
-  ["path", { d: "M16 10a4 4 0 0 1-8 0", key: "1ltviw" }]
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ],
+  ["path", { d: "M9 12h6", key: "1c52cq" }],
+  ["path", { d: "M12 9v6", key: "199k2o" }]
 ];
-const ShoppingBag = createLucideIcon("shopping-bag", __iconNode$l);
+const ShieldPlus = createLucideIcon("shield-plus", __iconNode$l);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34813,6 +34745,34 @@ const ShoppingBag = createLucideIcon("shopping-bag", __iconNode$l);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$k = [
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ]
+];
+const Shield = createLucideIcon("shield", __iconNode$k);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$j = [
+  ["path", { d: "M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z", key: "hou9p0" }],
+  ["path", { d: "M3 6h18", key: "d0wm0j" }],
+  ["path", { d: "M16 10a4 4 0 0 1-8 0", key: "1ltviw" }]
+];
+const ShoppingBag = createLucideIcon("shopping-bag", __iconNode$j);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$i = [
   ["path", { d: "M7 18v-6a5 5 0 1 1 10 0v6", key: "pcx96s" }],
   [
     "path",
@@ -34825,25 +34785,14 @@ const __iconNode$k = [
   ["path", { d: "m4.929 4.929.707.707", key: "1i51kw" }],
   ["path", { d: "M12 12v6", key: "3ahymv" }]
 ];
-const Siren = createLucideIcon("siren", __iconNode$k);
+const Siren = createLucideIcon("siren", __iconNode$i);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$j = [
-  ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
-  ["path", { d: "M12 18h.01", key: "mhygvu" }]
-];
-const Smartphone = createLucideIcon("smartphone", __iconNode$j);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$i = [
+const __iconNode$h = [
   [
     "path",
     {
@@ -34856,14 +34805,14 @@ const __iconNode$i = [
   ["path", { d: "M4 17v2", key: "vumght" }],
   ["path", { d: "M5 18H3", key: "zchphs" }]
 ];
-const Sparkles = createLucideIcon("sparkles", __iconNode$i);
+const Sparkles = createLucideIcon("sparkles", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$h = [
+const __iconNode$g = [
   [
     "path",
     {
@@ -34872,21 +34821,7 @@ const __iconNode$h = [
     }
   ]
 ];
-const Star = createLucideIcon("star", __iconNode$h);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$g = [
-  ["path", { d: "M11 2v2", key: "1539x4" }],
-  ["path", { d: "M5 2v2", key: "1yf1q8" }],
-  ["path", { d: "M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1", key: "rb5t3r" }],
-  ["path", { d: "M8 15a6 6 0 0 0 12 0v-3", key: "x18d4x" }],
-  ["circle", { cx: "20", cy: "10", r: "2", key: "ts1r5v" }]
-];
-const Stethoscope = createLucideIcon("stethoscope", __iconNode$g);
+const Star = createLucideIcon("star", __iconNode$g);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34894,6 +34829,20 @@ const Stethoscope = createLucideIcon("stethoscope", __iconNode$g);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$f = [
+  ["path", { d: "M11 2v2", key: "1539x4" }],
+  ["path", { d: "M5 2v2", key: "1yf1q8" }],
+  ["path", { d: "M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1", key: "rb5t3r" }],
+  ["path", { d: "M8 15a6 6 0 0 0 12 0v-3", key: "x18d4x" }],
+  ["circle", { cx: "20", cy: "10", r: "2", key: "ts1r5v" }]
+];
+const Stethoscope = createLucideIcon("stethoscope", __iconNode$f);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$e = [
   ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
   ["path", { d: "M12 2v2", key: "tus03m" }],
   ["path", { d: "M12 20v2", key: "1lh1kg" }],
@@ -34904,14 +34853,14 @@ const __iconNode$f = [
   ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
   ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
 ];
-const Sun = createLucideIcon("sun", __iconNode$f);
+const Sun = createLucideIcon("sun", __iconNode$e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$e = [
+const __iconNode$d = [
   ["path", { d: "M12 2v8", key: "1q4o3n" }],
   ["path", { d: "m4.93 10.93 1.41 1.41", key: "2a7f42" }],
   ["path", { d: "M2 18h2", key: "j10viu" }],
@@ -34921,14 +34870,14 @@ const __iconNode$e = [
   ["path", { d: "m8 6 4-4 4 4", key: "ybng9g" }],
   ["path", { d: "M16 18a4 4 0 0 0-8 0", key: "1lzouq" }]
 ];
-const Sunrise = createLucideIcon("sunrise", __iconNode$e);
+const Sunrise = createLucideIcon("sunrise", __iconNode$d);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$d = [
+const __iconNode$c = [
   ["path", { d: "M12 10V2", key: "16sf7g" }],
   ["path", { d: "m4.93 10.93 1.41 1.41", key: "2a7f42" }],
   ["path", { d: "M2 18h2", key: "j10viu" }],
@@ -34938,21 +34887,7 @@ const __iconNode$d = [
   ["path", { d: "m16 6-4 4-4-4", key: "6wukr" }],
   ["path", { d: "M16 18a4 4 0 0 0-8 0", key: "1lzouq" }]
 ];
-const Sunset = createLucideIcon("sunset", __iconNode$d);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$c = [
-  ["path", { d: "M3 6h18", key: "d0wm0j" }],
-  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
-  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
-  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
-  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
-];
-const Trash2 = createLucideIcon("trash-2", __iconNode$c);
+const Sunset = createLucideIcon("sunset", __iconNode$c);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34960,10 +34895,13 @@ const Trash2 = createLucideIcon("trash-2", __iconNode$c);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$b = [
-  ["path", { d: "M16 7h6v6", key: "box55l" }],
-  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
+  ["path", { d: "M3 6h18", key: "d0wm0j" }],
+  ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
+  ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
+  ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
+  ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
 ];
-const TrendingUp = createLucideIcon("trending-up", __iconNode$b);
+const Trash2 = createLucideIcon("trash-2", __iconNode$b);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -34971,6 +34909,17 @@ const TrendingUp = createLucideIcon("trending-up", __iconNode$b);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$a = [
+  ["path", { d: "M16 7h6v6", key: "box55l" }],
+  ["path", { d: "m22 7-8.5 8.5-5-5L2 17", key: "1t1m79" }]
+];
+const TrendingUp = createLucideIcon("trending-up", __iconNode$a);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$9 = [
   [
     "path",
     {
@@ -34981,19 +34930,7 @@ const __iconNode$a = [
   ["path", { d: "M12 9v4", key: "juzpu7" }],
   ["path", { d: "M12 17h.01", key: "p32p05" }]
 ];
-const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$a);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$9 = [
-  ["path", { d: "M12 3v12", key: "1x0j5s" }],
-  ["path", { d: "m17 8-5-5-5 5", key: "7q97r8" }],
-  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }]
-];
-const Upload = createLucideIcon("upload", __iconNode$9);
+const TriangleAlert = createLucideIcon("triangle-alert", __iconNode$9);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -35001,10 +34938,11 @@ const Upload = createLucideIcon("upload", __iconNode$9);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$8 = [
-  ["circle", { cx: "12", cy: "8", r: "5", key: "1hypcn" }],
-  ["path", { d: "M20 21a8 8 0 0 0-16 0", key: "rfgkzh" }]
+  ["path", { d: "M12 3v12", key: "1x0j5s" }],
+  ["path", { d: "m17 8-5-5-5 5", key: "7q97r8" }],
+  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }]
 ];
-const UserRound = createLucideIcon("user-round", __iconNode$8);
+const Upload = createLucideIcon("upload", __iconNode$8);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -35012,10 +34950,10 @@ const UserRound = createLucideIcon("user-round", __iconNode$8);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$7 = [
-  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
-  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
+  ["circle", { cx: "12", cy: "8", r: "5", key: "1hypcn" }],
+  ["path", { d: "M20 21a8 8 0 0 0-16 0", key: "rfgkzh" }]
 ];
-const User = createLucideIcon("user", __iconNode$7);
+const UserRound = createLucideIcon("user-round", __iconNode$7);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -35023,12 +34961,10 @@ const User = createLucideIcon("user", __iconNode$7);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$6 = [
-  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
-  ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
-  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
-  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
+  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
+  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
 ];
-const Users = createLucideIcon("users", __iconNode$6);
+const User = createLucideIcon("user", __iconNode$6);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -35036,15 +34972,12 @@ const Users = createLucideIcon("users", __iconNode$6);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$5 = [
-  ["circle", { cx: "12", cy: "12", r: "6", key: "1vlfrh" }],
-  ["polyline", { points: "12 10 12 12 13 13", key: "19dquz" }],
-  [
-    "path",
-    { d: "m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05", key: "18k57s" }
-  ],
-  ["path", { d: "m7.88 16.36.8 4a2 2 0 0 0 2 1.61h2.72a2 2 0 0 0 2-1.61l.81-4.05", key: "16ny36" }]
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
+  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
 ];
-const Watch = createLucideIcon("watch", __iconNode$5);
+const Users = createLucideIcon("users", __iconNode$5);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -37740,6 +37673,14 @@ function AdminPage() {
     }
   );
 }
+function hashPassword(input) {
+  let hash = 5381;
+  for (let i = 0; i < input.length; i++) {
+    hash = (hash << 5) + hash ^ input.charCodeAt(i);
+    hash = hash >>> 0;
+  }
+  return hash.toString(16).padStart(8, "0");
+}
 function AuthPage() {
   const navigate = useNavigate();
   const [tab, setTab] = reactExports.useState("login");
@@ -37774,22 +37715,53 @@ function AuthPage() {
       errs.confirm = "Passwords do not match";
     return errs;
   };
-  const handleSubmit = (e3) => {
+  const handleSubmit = async (e3) => {
     e3.preventDefault();
     const errs = tab === "login" ? validateLogin() : validateRegister();
     setErrors(errs);
     if (Object.keys(errs).length > 0) return;
     setLoading(true);
-    if (tab === "register") {
-      localStorage.setItem("ccx_user_name", registerForm.name);
-    } else {
-      const storedName = localStorage.getItem("ccx_user_name");
-      if (!storedName) {
-        const derived = loginForm.email.split("@")[0].replace(/[._-]/g, " ").replace(/\b\w/g, (c2) => c2.toUpperCase());
-        localStorage.setItem("ccx_user_name", derived);
+    try {
+      if (tab === "register") {
+        const emailKey = registerForm.email.toLowerCase();
+        const hash = hashPassword(`${emailKey}:${registerForm.password}`);
+        const existing = localStorage.getItem(`ccx_auth_${emailKey}`);
+        if (existing) {
+          setErrors({ email: "An account with this email already exists." });
+          setLoading(false);
+          return;
+        }
+        localStorage.setItem(`ccx_auth_${emailKey}`, hash);
+        localStorage.setItem("ccx_user_name", registerForm.name);
+        localStorage.setItem("ccx_user_email", emailKey);
+      } else {
+        const loginEmailKey = loginForm.email.toLowerCase();
+        const hash = hashPassword(`${loginEmailKey}:${loginForm.password}`);
+        const stored = localStorage.getItem(`ccx_auth_${loginEmailKey}`);
+        if (!stored) {
+          setErrors({
+            email: "No account found with this email. Please register first."
+          });
+          setLoading(false);
+          return;
+        }
+        if (hash !== stored) {
+          setErrors({ password: "Wrong password. Please try again." });
+          setLoading(false);
+          return;
+        }
+        localStorage.setItem("ccx_user_email", loginEmailKey);
+        const storedName = localStorage.getItem("ccx_user_name");
+        if (!storedName) {
+          const derived = loginForm.email.split("@")[0].replace(/[._-]/g, " ").replace(/\b\w/g, (c2) => c2.toUpperCase());
+          localStorage.setItem("ccx_user_name", derived);
+        }
       }
+      setTimeout(() => navigate({ to: "/dashboard" }), 1200);
+    } catch {
+      setErrors({ password: "Something went wrong. Please try again." });
+      setLoading(false);
     }
-    setTimeout(() => navigate({ to: "/dashboard" }), 1200);
   };
   const inputClass = "w-full bg-[#1A2431] border border-[rgba(160,190,210,0.15)] rounded-xl px-4 py-3 text-sm text-[#ffffff] placeholder-[#888888] outline-none focus:border-[rgba(249,168,201,0.5)] transition-all";
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -37885,10 +37857,24 @@ function AuthPage() {
                       placeholder: "Email Address",
                       className: inputClass,
                       value: tab === "login" ? loginForm.email : registerForm.email,
-                      onChange: (e3) => tab === "login" ? setLoginForm({ ...loginForm, email: e3.target.value }) : setRegisterForm({ ...registerForm, email: e3.target.value })
+                      onChange: (e3) => {
+                        setErrors((prev) => ({ ...prev, email: void 0 }));
+                        tab === "login" ? setLoginForm({ ...loginForm, email: e3.target.value }) : setRegisterForm({ ...registerForm, email: e3.target.value });
+                      }
                     }
                   ),
-                  errors.email && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-[#FF4D5A] mt-1 pl-1", children: errors.email })
+                  errors.email && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "p",
+                    {
+                      className: "text-xs text-[#FF4D5A] mt-1.5 pl-1 flex items-center gap-1 font-medium",
+                      "data-ocid": "auth.email.field_error",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "⚠" }),
+                        " ",
+                        errors.email
+                      ]
+                    }
+                  )
                 ] }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
@@ -37900,10 +37886,13 @@ function AuthPage() {
                         placeholder: "Password",
                         className: `${inputClass} pr-12`,
                         value: tab === "login" ? loginForm.password : registerForm.password,
-                        onChange: (e3) => tab === "login" ? setLoginForm({ ...loginForm, password: e3.target.value }) : setRegisterForm({
-                          ...registerForm,
-                          password: e3.target.value
-                        })
+                        onChange: (e3) => {
+                          setErrors((prev) => ({ ...prev, password: void 0 }));
+                          tab === "login" ? setLoginForm({ ...loginForm, password: e3.target.value }) : setRegisterForm({
+                            ...registerForm,
+                            password: e3.target.value
+                          });
+                        }
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -37916,7 +37905,18 @@ function AuthPage() {
                       }
                     )
                   ] }),
-                  errors.password && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-[#FF4D5A] mt-1 pl-1", children: errors.password })
+                  errors.password && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "p",
+                    {
+                      className: "text-xs text-[#FF4D5A] mt-1.5 pl-1 flex items-center gap-1 font-medium animate-pulse",
+                      "data-ocid": "auth.password.field_error",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "⚠" }),
+                        " ",
+                        errors.password
+                      ]
+                    }
+                  )
                 ] }),
                 tab === "register" && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -37949,7 +37949,7 @@ function AuthPage() {
                     className: "w-full py-3 rounded-xl bg-gradient-to-r from-[#f9a8c9] to-[#f9a8c9] text-[#0d0d0d] font-semibold text-sm hover:shadow-lg hover:shadow-teal-500/30 transition-all disabled:opacity-70 flex items-center justify-center gap-2 ripple-container",
                     children: loading ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { size: 16, className: "animate-spin" }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Signing in..." })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: tab === "login" ? "Checking..." : "Creating account..." })
                     ] }) : /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: tab === "login" ? "Sign In" : "Create Account" })
                   }
                 )
@@ -47536,6 +47536,15 @@ const HealthMetric = Record({
   "user_id": Text$1,
   "recorded_at": Nat64
 });
+const RegisterResult = Variant({
+  "ok": Null,
+  "alreadyExists": Null
+});
+const VerifyResult = Variant({
+  "ok": Null,
+  "wrongPassword": Null,
+  "notFound": Null
+});
 Service({
   "add_metric": Func(
     [Text$1, Text$1, Float64, Text$1],
@@ -47551,7 +47560,9 @@ Service({
     [Text$1, Nat, Opt(Text$1)],
     [Vec(HealthMetric)],
     ["query"]
-  )
+  ),
+  "registerUser": Func([Text$1, Text$1], [RegisterResult], []),
+  "verifyPassword": Func([Text$1, Text$1], [VerifyResult], ["query"])
 });
 const idlFactory = ({ IDL: IDL2 }) => {
   const PredictionInput2 = IDL2.Record({
@@ -47587,6 +47598,15 @@ const idlFactory = ({ IDL: IDL2 }) => {
     "user_id": IDL2.Text,
     "recorded_at": IDL2.Nat64
   });
+  const RegisterResult2 = IDL2.Variant({
+    "ok": IDL2.Null,
+    "alreadyExists": IDL2.Null
+  });
+  const VerifyResult2 = IDL2.Variant({
+    "ok": IDL2.Null,
+    "wrongPassword": IDL2.Null,
+    "notFound": IDL2.Null
+  });
   return IDL2.Service({
     "add_metric": IDL2.Func(
       [IDL2.Text, IDL2.Text, IDL2.Float64, IDL2.Text],
@@ -47601,6 +47621,12 @@ const idlFactory = ({ IDL: IDL2 }) => {
     "get_user_metrics": IDL2.Func(
       [IDL2.Text, IDL2.Nat, IDL2.Opt(IDL2.Text)],
       [IDL2.Vec(HealthMetric2)],
+      ["query"]
+    ),
+    "registerUser": IDL2.Func([IDL2.Text, IDL2.Text], [RegisterResult2], []),
+    "verifyPassword": IDL2.Func(
+      [IDL2.Text, IDL2.Text],
+      [VerifyResult2],
       ["query"]
     )
   });
@@ -47665,6 +47691,34 @@ class Backend {
       return from_candid_vec_n7(this._uploadFile, this._downloadFile, result);
     }
   }
+  async registerUser(arg0, arg1) {
+    if (this.processError) {
+      try {
+        const result = await this.actor.registerUser(arg0, arg1);
+        return from_candid_RegisterResult_n14(this._uploadFile, this._downloadFile, result);
+      } catch (e3) {
+        this.processError(e3);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.registerUser(arg0, arg1);
+      return from_candid_RegisterResult_n14(this._uploadFile, this._downloadFile, result);
+    }
+  }
+  async verifyPassword(arg0, arg1) {
+    if (this.processError) {
+      try {
+        const result = await this.actor.verifyPassword(arg0, arg1);
+        return from_candid_VerifyResult_n16(this._uploadFile, this._downloadFile, result);
+      } catch (e3) {
+        this.processError(e3);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.verifyPassword(arg0, arg1);
+      return from_candid_VerifyResult_n16(this._uploadFile, this._downloadFile, result);
+    }
+  }
 }
 function from_candid_HealthMetric_n8(_uploadFile, _downloadFile, value) {
   return from_candid_record_n9(_uploadFile, _downloadFile, value);
@@ -47677,6 +47731,12 @@ function from_candid_MetricType_n12(_uploadFile, _downloadFile, value) {
 }
 function from_candid_PredictionInput_n2(_uploadFile, _downloadFile, value) {
   return from_candid_record_n3(_uploadFile, _downloadFile, value);
+}
+function from_candid_RegisterResult_n14(_uploadFile, _downloadFile, value) {
+  return from_candid_variant_n15(_uploadFile, _downloadFile, value);
+}
+function from_candid_VerifyResult_n16(_uploadFile, _downloadFile, value) {
+  return from_candid_variant_n17(_uploadFile, _downloadFile, value);
 }
 function from_candid_opt_n4(_uploadFile, _downloadFile, value) {
   return value.length === 0 ? null : value[0];
@@ -47726,6 +47786,12 @@ function from_candid_variant_n11(_uploadFile, _downloadFile, value) {
 function from_candid_variant_n13(_uploadFile, _downloadFile, value) {
   return "HeartRate" in value ? "HeartRate" : "DiastolicBP" in value ? "DiastolicBP" : "SystolicBP" in value ? "SystolicBP" : "SleepHours" in value ? "SleepHours" : value;
 }
+function from_candid_variant_n15(_uploadFile, _downloadFile, value) {
+  return "ok" in value ? "ok" : "alreadyExists" in value ? "alreadyExists" : value;
+}
+function from_candid_variant_n17(_uploadFile, _downloadFile, value) {
+  return "ok" in value ? "ok" : "wrongPassword" in value ? "wrongPassword" : "notFound" in value ? "notFound" : value;
+}
 function from_candid_vec_n7(_uploadFile, _downloadFile, value) {
   return value.map((x3) => from_candid_HealthMetric_n8(_uploadFile, _downloadFile, x3));
 }
@@ -47746,398 +47812,203 @@ function createActor(canisterId, _uploadFile, _downloadFile, options = {}) {
   });
   return new Backend(actor, _uploadFile, _downloadFile, options.processError);
 }
-function decodeSFLOAT(bytes, offset) {
-  const raw = bytes.getUint16(offset, true);
-  const exponent2 = raw >> 12;
-  const mantissa = raw & 4095;
-  const signedExp = exponent2 >= 8 ? exponent2 - 16 : exponent2;
-  const signedMantissa = mantissa >= 2048 ? mantissa - 4096 : mantissa;
-  return signedMantissa * 10 ** signedExp;
+const TOKEN_KEY = "gfit_access_token";
+const LAST_SYNC_KEY = "gfit_last_sync";
+const CLIENT_ID = "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com";
+const SCOPES = [
+  "https://www.googleapis.com/auth/fitness.activity.read",
+  "https://www.googleapis.com/auth/fitness.body.read",
+  "https://www.googleapis.com/auth/fitness.blood_pressure.read"
+].join(" ");
+function getEffectiveClientId() {
+  const stored = localStorage.getItem("gfit_client_id");
+  if (stored == null ? void 0 : stored.trim()) return stored.trim();
+  return CLIENT_ID;
 }
-const isIOS = () => typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-const PHONE_MANUFACTURERS = [
-  "samsung",
-  "google",
-  "apple",
-  "xiaomi",
-  "huawei",
-  "oneplus",
-  "oppo",
-  "vivo",
-  "motorola",
-  "lg",
-  "nokia",
-  "sony",
-  "realme"
-];
-function useBluetoothHealth() {
-  const [state, setState] = reactExports.useState({
-    heartRate: null,
-    bloodPressure: null,
-    sleep: null,
-    steps: null,
-    calories: null,
-    connectionStatus: "disconnected",
-    deviceName: null,
-    deviceType: "unknown",
-    connectedApps: [],
-    connectedServices: [],
-    activityData: { steps: null, calories: null, lastSync: null },
-    isSupported: typeof navigator !== "undefined" && "bluetooth" in navigator && !isIOS(),
-    isUnsupported: typeof navigator === "undefined" || !("bluetooth" in navigator) || isIOS(),
-    errorMessage: null,
-    hrLastRecorded: null,
-    bpLastRecorded: null,
-    sleepLastRecorded: null,
-    hrSource: null,
-    bpSource: null,
-    sleepSource: null
-  });
-  const gattServerRef = reactExports.useRef(null);
-  const deviceRef = reactExports.useRef(null);
-  const setSleep = reactExports.useCallback((hours) => {
-    setState((prev) => ({
-      ...prev,
-      sleep: hours,
-      sleepLastRecorded: hours !== null ? /* @__PURE__ */ new Date() : prev.sleepLastRecorded,
-      sleepSource: hours !== null ? "Manual" : prev.sleepSource
-    }));
-  }, []);
-  const setHeartRate = reactExports.useCallback((bpm) => {
-    setState((prev) => ({
-      ...prev,
-      heartRate: bpm,
-      hrLastRecorded: bpm !== null ? /* @__PURE__ */ new Date() : prev.hrLastRecorded,
-      hrSource: bpm !== null ? "Manual" : prev.hrSource
-    }));
-  }, []);
-  const setBloodPressure = reactExports.useCallback((bp) => {
-    setState((prev) => ({
-      ...prev,
-      bloodPressure: bp,
-      bpLastRecorded: bp !== null ? /* @__PURE__ */ new Date() : prev.bpLastRecorded,
-      bpSource: bp !== null ? "Manual" : prev.bpSource
-    }));
-  }, []);
-  const disconnect = reactExports.useCallback(() => {
-    var _a3;
-    try {
-      if ((_a3 = gattServerRef.current) == null ? void 0 : _a3.connected) {
-        gattServerRef.current.disconnect();
-      }
-    } catch {
-    }
-    gattServerRef.current = null;
-    deviceRef.current = null;
-    setState((prev) => ({
-      ...prev,
-      connectionStatus: "disconnected",
-      deviceName: null,
-      deviceType: "unknown",
-      connectedApps: [],
-      heartRate: null,
-      bloodPressure: null,
-      steps: null,
-      calories: null,
-      activityData: { steps: null, calories: null, lastSync: null }
-    }));
-  }, []);
-  const connect = reactExports.useCallback(async () => {
-    if (isIOS()) {
-      setState((prev) => ({ ...prev, isSupported: false }));
-      return;
-    }
-    if (!("bluetooth" in navigator)) {
-      setState((prev) => ({ ...prev, isSupported: false }));
-      return;
-    }
-    setState((prev) => ({
-      ...prev,
-      connectionStatus: "connecting",
-      errorMessage: null
-    }));
-    try {
-      const OPTIONAL_SERVICES = [
-        "heart_rate",
-        "blood_pressure",
-        "health_thermometer",
-        "battery_service",
-        6157,
-        // Heart Rate
-        6160,
-        // Blood Pressure
-        6153,
-        // Health Thermometer
-        6159,
-        // Battery Service
-        6172,
-        // User Data
-        6178,
-        // PLX (Pulse Oximeter)
-        6164,
-        // Running Speed & Cadence (steps proxy)
-        6166,
-        // Cycling Speed and Cadence
-        6154,
-        // Device Information (phones expose this)
-        6144,
-        // Generic Access
-        6145,
-        // Generic Attribute
-        6170,
-        // Environmental Sensing
-        6163
-        // Scan Parameters
-      ];
-      const PHONE_NAME_PREFIXES = [
-        "Samsung",
-        "SM-",
-        // Samsung Galaxy shorthand
-        "Google",
-        "Pixel",
-        "Xiaomi",
-        "Redmi",
-        "POCO",
-        "OnePlus",
-        "OPPO",
-        "Vivo",
-        "Motorola",
-        "Nokia",
-        "Huawei",
-        "Realme",
-        "Nothing",
-        "NOTHING",
-        "Infinix",
-        "Tecno",
-        "Honor",
-        "Lenovo",
-        "LG",
-        "Sony"
-      ];
-      const device = await navigator.bluetooth.requestDevice({
-        filters: [
-          // One namePrefix filter per manufacturer — this is what makes phones
-          // appear in the browser device picker.
-          ...PHONE_NAME_PREFIXES.map((prefix2) => ({ namePrefix: prefix2 })),
-          // Fallback: any BLE device advertising the heart_rate service
-          // (fitness trackers, smartwatches, chest straps, etc.)
-          { services: ["heart_rate"] }
-        ],
-        optionalServices: OPTIONAL_SERVICES
-      });
-      deviceRef.current = device;
-      device.addEventListener("gattserverdisconnected", () => {
-        gattServerRef.current = null;
-        setState((prev) => ({
-          ...prev,
-          connectionStatus: "disconnected",
-          heartRate: null,
-          bloodPressure: null,
-          steps: null,
-          calories: null,
-          deviceType: "unknown",
-          connectedApps: [],
-          activityData: { steps: null, calories: null, lastSync: null }
-        }));
-      });
-      const server = await device.gatt.connect();
-      gattServerRef.current = server;
-      setState((prev) => ({
-        ...prev,
-        connectionStatus: "connected",
-        deviceName: device.name ?? "Unknown Device"
-      }));
-      let detectedType = "unknown";
-      const nameLower = (device.name ?? "").toLowerCase();
-      if ([
-        "airpods",
-        "buds",
-        "headphones",
-        "wh-",
-        "wf-",
-        "jabra",
-        "bose",
-        "beats"
-      ].some((h2) => nameLower.includes(h2))) {
-        detectedType = "headphone";
-      } else if (["fit", "watch", "band", "garmin", "polar", "whoop"].some(
-        (t2) => nameLower.includes(t2)
-      )) {
-        detectedType = "tracker";
-      }
-      let manufacturer = "";
-      try {
-        const devInfoService = await server.getPrimaryService(6154);
-        try {
-          const manufacturerChar = await devInfoService.getCharacteristic(10793);
-          const val = await manufacturerChar.readValue();
-          manufacturer = new TextDecoder().decode(val).toLowerCase().trim();
-        } catch {
-        }
-        if (detectedType === "unknown" && PHONE_MANUFACTURERS.some((m2) => manufacturer.includes(m2))) {
-          detectedType = "phone";
-        }
-      } catch {
-      }
-      let hasHeartRate = false;
-      let hasRunningSpeed = false;
-      let steps2 = null;
-      const [hrResult, bpResult, rscResult, _battResult] = await Promise.allSettled([
-        // 1. Heart Rate
-        (async () => {
-          const hrService = await server.getPrimaryService("heart_rate");
-          const hrChar = await hrService.getCharacteristic(
-            "heart_rate_measurement"
-          );
-          await hrChar.startNotifications();
-          hrChar.addEventListener(
-            "characteristicvaluechanged",
-            (event) => {
-              const value = event.target.value;
-              if (!value) return;
-              const flags = value.getUint8(0);
-              const hr = flags & 1 ? value.getUint16(1, true) : value.getUint8(1);
-              setState((prev) => ({
-                ...prev,
-                heartRate: hr,
-                hrLastRecorded: /* @__PURE__ */ new Date(),
-                hrSource: "Bluetooth"
-              }));
-            }
-          );
-          return true;
-        })(),
-        // 2. Blood Pressure
-        (async () => {
-          const bpService = await server.getPrimaryService("blood_pressure");
-          const bpChar = await bpService.getCharacteristic(10805);
-          const value = await bpChar.readValue();
-          const systolic = Math.round(decodeSFLOAT(value, 1));
-          const diastolic = Math.round(decodeSFLOAT(value, 3));
-          if (systolic > 0 && diastolic > 0) {
-            setState((prev) => ({
-              ...prev,
-              bloodPressure: { systolic, diastolic },
-              bpLastRecorded: /* @__PURE__ */ new Date(),
-              bpSource: "Bluetooth"
-            }));
-          }
-          return true;
-        })(),
-        // 3. Running Speed & Cadence (steps proxy)
-        (async () => {
-          const rscService = await server.getPrimaryService(6164);
-          const rscChar = await rscService.getCharacteristic(10835);
-          await rscChar.startNotifications();
-          rscChar.addEventListener(
-            "characteristicvaluechanged",
-            (event) => {
-              const value = event.target.value;
-              if (!value) return;
-              if (value.byteLength >= 6) {
-                const cumulativeStrides = value.getUint32(2, true);
-                const estimatedSteps = cumulativeStrides * 2;
-                setState((prev) => ({
-                  ...prev,
-                  steps: estimatedSteps,
-                  activityData: {
-                    ...prev.activityData,
-                    steps: estimatedSteps,
-                    lastSync: /* @__PURE__ */ new Date()
-                  }
-                }));
-              }
-            }
-          );
-          return true;
-        })(),
-        // 4. Battery service
-        (async () => {
-          const batService = await server.getPrimaryService("battery_service");
-          const batChar = await batService.getCharacteristic("battery_level");
-          await batChar.readValue();
-          return true;
-        })()
-      ]);
-      hasHeartRate = hrResult.status === "fulfilled" && hrResult.value === true;
-      hasRunningSpeed = rscResult.status === "fulfilled" && rscResult.value === true;
-      if (hasRunningSpeed) {
-        steps2 = state.steps;
-      }
-      if (detectedType === "unknown") {
-        if (hasHeartRate && hasRunningSpeed) {
-          detectedType = "tracker";
-        } else if (hasHeartRate) {
-          if (PHONE_MANUFACTURERS.some((m2) => nameLower.includes(m2))) {
-            detectedType = "phone";
+function hasConfiguredClientId() {
+  const id2 = getEffectiveClientId();
+  return id2 !== CLIENT_ID && id2.length > 0;
+}
+function getRedirectUri() {
+  return window.location.origin + window.location.pathname;
+}
+function parseAggregateResponse(data) {
+  var _a3, _b3, _c2, _d2, _e2, _f2;
+  let steps2 = null;
+  let heartRate = null;
+  let bloodPressureSystolic = null;
+  let bloodPressureDiastolic = null;
+  let sleep2 = null;
+  for (const bucket of data.bucket ?? []) {
+    for (const dataset of bucket.dataset ?? []) {
+      const dsId = dataset.dataSourceId ?? "";
+      for (const point2 of dataset.point ?? []) {
+        const values = point2.value ?? [];
+        if (dsId.includes("step_count")) {
+          const v2 = ((_a3 = values[0]) == null ? void 0 : _a3.intVal) ?? ((_b3 = values[0]) == null ? void 0 : _b3.fpVal) ?? null;
+          if (v2 !== null) steps2 = (steps2 ?? 0) + Number(v2);
+        } else if (dsId.includes("heart_rate")) {
+          const v2 = ((_c2 = values[0]) == null ? void 0 : _c2.fpVal) ?? null;
+          if (v2 !== null) heartRate = Math.round(Number(v2));
+        } else if (dsId.includes("blood_pressure")) {
+          const sys = ((_d2 = values[0]) == null ? void 0 : _d2.fpVal) ?? null;
+          const dia = ((_e2 = values[1]) == null ? void 0 : _e2.fpVal) ?? null;
+          if (sys !== null) bloodPressureSystolic = Math.round(Number(sys));
+          if (dia !== null) bloodPressureDiastolic = Math.round(Number(dia));
+        } else if (dsId.includes("sleep")) {
+          const segType = ((_f2 = values[0]) == null ? void 0 : _f2.intVal) ?? null;
+          const startMs = Number(point2.startTimeNanos ?? 0) / 1e6;
+          const endMs = Number(point2.endTimeNanos ?? 0) / 1e6;
+          const durationHrs = (endMs - startMs) / 36e5;
+          if (segType !== null && [2, 3, 4, 5, 6].includes(Number(segType)) && durationHrs > 0) {
+            sleep2 = (sleep2 ?? 0) + durationHrs;
           }
         }
       }
-      const connectedApps = [];
-      const bpOk = bpResult.status === "fulfilled";
-      if (hasHeartRate || bpOk) {
-        if (manufacturer.includes("samsung") || (device.name ?? "").toLowerCase().includes("samsung")) {
-          connectedApps.push("Samsung Health");
-        } else if (manufacturer.includes("google") || (device.name ?? "").toLowerCase().includes("pixel")) {
-          connectedApps.push("Google Fit");
-        } else {
-          connectedApps.push("Google Fit", "Samsung Health");
-        }
-      }
-      if (hasRunningSpeed) {
-        if (!connectedApps.includes("Samsung Health")) {
-          connectedApps.push("Samsung Health");
-        }
-        if (!connectedApps.includes("Fitbit")) {
-          connectedApps.push("Fitbit");
-        }
-      }
-      const connectedServices = [];
-      if (hrResult.status === "fulfilled") connectedServices.push("heart_rate");
-      if (bpResult.status === "fulfilled")
-        connectedServices.push("blood_pressure");
-      if (rscResult.status === "fulfilled")
-        connectedServices.push("running_speed_cadence");
-      setState((prev) => ({
-        ...prev,
-        deviceType: detectedType,
-        connectedApps,
-        connectedServices,
-        activityData: {
-          steps: steps2,
-          calories: null,
-          lastSync: steps2 !== null ? /* @__PURE__ */ new Date() : null
-        }
-      }));
-    } catch (err) {
-      const error = err;
-      const name = (error == null ? void 0 : error.name) ?? "";
-      const message2 = (error == null ? void 0 : error.message) ?? "";
-      let friendlyMessage;
-      if (name === "NotAllowedError") {
-        friendlyMessage = "Bluetooth permission was denied. Please allow Bluetooth access in your browser settings.";
-      } else if (name === "NotFoundError" || message2.includes("cancelled")) {
-        friendlyMessage = "";
-      } else if (name === "NetworkError" || message2.toLowerCase().includes("gatt") || message2.toLowerCase().includes("connect")) {
-        friendlyMessage = "Could not connect to the device. Make sure your health app is open and Bluetooth is enabled.";
-      } else {
-        friendlyMessage = "Connection failed. Please try again.";
-      }
-      const isUserCancelled = name === "NotFoundError" || message2.includes("cancelled");
-      setState((prev) => ({
-        ...prev,
-        connectionStatus: isUserCancelled ? "disconnected" : "error",
-        errorMessage: isUserCancelled ? null : friendlyMessage || message2 || "Connection failed"
-      }));
     }
-  }, [state.steps]);
+  }
+  if (sleep2 !== null) sleep2 = Math.round(sleep2 * 10) / 10;
   return {
-    ...state,
-    connect,
-    disconnect,
-    setSleep,
-    setHeartRate,
-    setBloodPressure
+    steps: steps2,
+    heartRate,
+    bloodPressureSystolic,
+    bloodPressureDiastolic,
+    sleep: sleep2
+  };
+}
+function useGoogleFit() {
+  const [isAuthorized, setIsAuthorized] = reactExports.useState(() => {
+    return !!localStorage.getItem(TOKEN_KEY);
+  });
+  const [lastSync, setLastSync] = reactExports.useState(() => {
+    const ts = localStorage.getItem(LAST_SYNC_KEY);
+    return ts ? new Date(ts) : null;
+  });
+  const [isFetching, setIsFetching] = reactExports.useState(false);
+  const [isRedirecting, setIsRedirecting] = reactExports.useState(false);
+  const [clientIdConfigured, setClientIdConfigured] = reactExports.useState(
+    () => hasConfiguredClientId()
+  );
+  reactExports.useEffect(() => {
+    let token = null;
+    const hash = window.location.hash;
+    if (hash) {
+      const hashParams = new URLSearchParams(hash.replace(/^#/, ""));
+      token = hashParams.get("access_token");
+    }
+    if (!token) {
+      const queryParams = new URLSearchParams(window.location.search);
+      token = queryParams.get("access_token");
+    }
+    if (token) {
+      localStorage.setItem(TOKEN_KEY, token);
+      setIsAuthorized(true);
+      const clean2 = window.location.origin + window.location.pathname + // Preserve any non-token query params
+      (() => {
+        const qp = new URLSearchParams(window.location.search);
+        qp.delete("access_token");
+        qp.delete("token_type");
+        qp.delete("expires_in");
+        qp.delete("scope");
+        const qs = qp.toString();
+        return qs ? `?${qs}` : "";
+      })();
+      window.history.replaceState(null, "", clean2);
+    }
+  }, []);
+  const refreshClientIdStatus = reactExports.useCallback(() => {
+    setClientIdConfigured(hasConfiguredClientId());
+  }, []);
+  const initiateOAuth = reactExports.useCallback(() => {
+    const clientId = getEffectiveClientId();
+    if (clientId === CLIENT_ID) {
+      return;
+    }
+    setIsRedirecting(true);
+    const redirectUri = getRedirectUri();
+    const params = new URLSearchParams({
+      client_id: clientId,
+      redirect_uri: redirectUri,
+      response_type: "token",
+      scope: SCOPES,
+      include_granted_scopes: "true",
+      prompt: "consent"
+    });
+    const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+    window.location.href = authUrl;
+  }, []);
+  const requestToken = initiateOAuth;
+  const clearToken = reactExports.useCallback(() => {
+    localStorage.removeItem(TOKEN_KEY);
+    localStorage.removeItem(LAST_SYNC_KEY);
+    setIsAuthorized(false);
+    setLastSync(null);
+  }, []);
+  const fetchLast24HourData = reactExports.useCallback(async () => {
+    const token = localStorage.getItem(TOKEN_KEY);
+    if (!token) {
+      return {
+        steps: null,
+        heartRate: null,
+        bloodPressureSystolic: null,
+        bloodPressureDiastolic: null,
+        sleep: null
+      };
+    }
+    setIsFetching(true);
+    try {
+      const now2 = Date.now();
+      const yesterday = now2 - 24 * 60 * 60 * 1e3;
+      const body = {
+        aggregateBy: [
+          { dataTypeName: "com.google.step_count.delta" },
+          { dataTypeName: "com.google.heart_rate.bpm" },
+          { dataTypeName: "com.google.blood_pressure" },
+          { dataTypeName: "com.google.sleep.segment" }
+        ],
+        bucketByTime: { durationMillis: String(24 * 60 * 60 * 1e3) },
+        startTimeMillis: String(yesterday),
+        endTimeMillis: String(now2)
+      };
+      const response = await fetch(
+        "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(body)
+        }
+      );
+      if (response.status === 401) {
+        clearToken();
+        throw new Error("unauthorized");
+      }
+      if (!response.ok) {
+        throw new Error(`Google Fit API error: ${response.status}`);
+      }
+      const data = await response.json();
+      const result = parseAggregateResponse(data);
+      const syncTime = /* @__PURE__ */ new Date();
+      localStorage.setItem(LAST_SYNC_KEY, syncTime.toISOString());
+      setLastSync(syncTime);
+      return result;
+    } finally {
+      setIsFetching(false);
+    }
+  }, [clearToken]);
+  return {
+    isAuthorized,
+    isFetching,
+    isRedirecting,
+    lastSync,
+    clientIdConfigured,
+    initiateOAuth,
+    requestToken,
+    fetchLast24HourData,
+    clearToken,
+    refreshClientIdStatus
   };
 }
 const activityIcons = {
@@ -48293,7 +48164,7 @@ function HeartRateTile({
             }
           )
         ] }),
-        value !== null ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+        value !== null ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-center gap-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "p",
           {
             className: "text-sm font-bold transition-all duration-200",
@@ -48304,7 +48175,7 @@ function HeartRateTile({
             },
             children: value
           }
-        ) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-1 items-center justify-center", children: [
+        ) }) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-1 items-center justify-center", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "input",
             {
@@ -48338,7 +48209,7 @@ function HeartRateTile({
           "p",
           {
             className: "text-[9px] mt-0.5",
-            style: { color: source === "Bluetooth" ? "#22C55E" : "#f9a8c9" },
+            style: { color: source === "Google Fit" ? "#22C55E" : "#f9a8c9" },
             children: [
               lastTime,
               " via ",
@@ -48459,7 +48330,7 @@ function BloodPressureTile({
           "p",
           {
             className: "text-[9px] mt-0.5",
-            style: { color: source === "Bluetooth" ? "#22C55E" : "#f9a8c9" },
+            style: { color: source === "Google Fit" ? "#22C55E" : "#f9a8c9" },
             children: [
               lastTime,
               " via ",
@@ -48542,7 +48413,7 @@ function SleepTile({
           "p",
           {
             className: "text-[9px] mt-0.5",
-            style: { color: source === "Bluetooth" ? "#22C55E" : "#A78BFA" },
+            style: { color: source === "Google Fit" ? "#22C55E" : "#A78BFA" },
             children: [
               lastTime,
               " via ",
@@ -48555,8 +48426,8 @@ function SleepTile({
   );
 }
 function StepsTile({ value }) {
-  if (value === null) return null;
-  const isGoalMet = value >= 1e4;
+  const hasData = value !== null && value > 0;
+  const isGoalMet = hasData && value >= 1e4;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
@@ -48568,19 +48439,25 @@ function StepsTile({ value }) {
           {
             size: 18,
             className: "mx-auto mb-1",
-            style: { color: "#34D399", opacity: 1 }
+            style: { color: "#34D399", opacity: hasData ? 1 : 0.4 }
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold", style: { color: "#34D399" }, children: value.toLocaleString() }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-[#888888] mt-0.5", children: "Steps" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          StatusBadge,
-          {
-            label: isGoalMet ? "Goal Met" : "Keep Going",
-            type: isGoalMet ? "good" : "fair"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] text-[#4A5568] mt-0.5", children: "today" })
+        hasData ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold", style: { color: "#34D399" }, children: value.toLocaleString() }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-[#888888] mt-0.5", children: "Steps" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            StatusBadge,
+            {
+              label: isGoalMet ? "Goal Met" : "Keep Going",
+              type: isGoalMet ? "good" : "fair"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] text-[#4A5568] mt-0.5", children: "today" })
+        ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold text-[#555]", children: "—" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-[#888888] mt-0.5", children: "Steps" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[9px] text-[#555] bg-[rgba(255,255,255,0.05)] px-1.5 py-0.5 rounded-full mt-0.5 inline-block", children: "Not available" })
+        ] })
       ]
     }
   );
@@ -48884,339 +48761,97 @@ function HealthScorePanel({
     }
   );
 }
-function DeviceTypeBadge({
-  type
+function GoogleFitPanel({
+  isAuthorized,
+  isFetching,
+  isRedirecting,
+  lastSync,
+  clientIdConfigured,
+  onRequestToken,
+  onRefresh,
+  onDisconnect,
+  errorMessage
 }) {
-  if (type === "phone") {
-    return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-      "span",
-      {
-        className: "inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full",
-        style: {
-          background: "rgba(99,102,241,0.15)",
-          color: "#818CF8",
-          border: "1px solid rgba(99,102,241,0.3)"
-        },
-        children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Smartphone, { size: 10 }),
-          "Phone"
-        ]
-      }
-    );
-  }
-  if (type === "headphone") {
-    return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-      "span",
-      {
-        className: "inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full",
-        style: {
-          background: "rgba(251,191,36,0.15)",
-          color: "#FBBF24",
-          border: "1px solid rgba(251,191,36,0.3)"
-        },
-        children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Bluetooth, { size: 10 }),
-          "Headphones"
-        ]
-      }
-    );
-  }
-  if (type === "tracker") {
-    return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-      "span",
-      {
-        className: "inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full",
-        style: {
-          background: "rgba(52,211,153,0.15)",
-          color: "#34D399",
-          border: "1px solid rgba(52,211,153,0.3)"
-        },
-        children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Watch, { size: 10 }),
-          "Tracker"
-        ]
-      }
-    );
-  }
+  const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "span",
+    motion.div,
     {
-      className: "inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full",
-      style: {
-        background: "rgba(249,168,201,0.15)",
-        color: "#f9a8c9",
-        border: "1px solid rgba(249,168,201,0.3)"
-      },
+      initial: { opacity: 0, y: 20 },
+      animate: { opacity: 1, y: 0 },
+      className: "rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 space-y-4 mb-4",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Bluetooth, { size: 10 }),
-        "Device"
-      ]
-    }
-  );
-}
-function BluetoothPanel({
-  isUnsupported,
-  connectionStatus,
-  deviceName,
-  deviceType,
-  connectedApps,
-  connectedServices,
-  heartRate,
-  bloodPressure,
-  steps: steps2,
-  errorMessage,
-  onConnect,
-  onDisconnect
-}) {
-  const isConnected = connectionStatus === "connected";
-  const isConnecting = connectionStatus === "connecting";
-  const hasError = connectionStatus === "error";
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "div",
-    {
-      className: "rounded-xl mb-4 overflow-hidden",
-      style: {
-        background: "rgba(249,168,201,0.05)",
-        border: isConnected ? "1px solid rgba(34,197,94,0.25)" : hasError ? "1px solid rgba(239,68,68,0.25)" : "1px solid rgba(249,168,201,0.15)"
-      },
-      children: isUnsupported ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3 p-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          BluetoothOff,
+        isIOSDevice && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-start gap-3 rounded-xl border border-amber-400/30 bg-amber-400/10 p-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-amber-400 text-sm", children: "On iOS, Google Fit syncs from Apple Health. Make sure your Health app is up to date before connecting." }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl bg-pink-400/20 p-2.5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "h-5 w-5 text-pink-400" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold text-white", children: "Google Fit" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-white/60", children: isAuthorized ? lastSync ? `Last sync: ${lastSync.toLocaleTimeString()}` : "Connected" : "Not connected" })
+            ] })
+          ] }),
+          isAuthorized && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 border border-green-500/30", children: "Connected" })
+        ] }),
+        !isAuthorized && !clientIdConfigured && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-3 rounded-xl border border-blue-400/30 bg-blue-400/10 p-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { className: "h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-blue-300", children: [
+            "To connect Google Fit, enter your Google OAuth Client ID in",
+            " ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-blue-200", children: "Admin Panel → AI Integration Settings" }),
+            " ",
+            "first."
+          ] })
+        ] }),
+        errorMessage && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-xl border border-red-400/30 bg-red-400/10 p-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-red-400", children: errorMessage }) }),
+        (isFetching || isRedirecting) && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-sm text-white/60", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-4 w-4 animate-spin rounded-full border-2 border-pink-400 border-t-transparent" }),
+          isRedirecting ? "Redirecting to Google…" : "Fetching from Google Fit…"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-3", children: !isAuthorized ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "button",
           {
-            size: 16,
-            className: "text-[#EF4444] flex-shrink-0 mt-0.5"
+            type: "button",
+            onClick: clientIdConfigured ? onRequestToken : void 0,
+            disabled: isRedirecting || !clientIdConfigured,
+            "data-ocid": "googlefit.connect.button",
+            className: "flex items-center gap-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-pink-500/25 transition-all hover:shadow-pink-500/40 hover:brightness-110 disabled:opacity-50 disabled:cursor-not-allowed",
+            children: isRedirecting ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" }),
+              "Redirecting…"
+            ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Wifi, { className: "h-4 w-4" }),
+              "Connect Google Fit"
+            ] })
           }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-[#EF4444]", children: "Bluetooth Not Supported" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] text-[#888888] mt-0.5", children: "Bluetooth is not supported on iPhone and iPad. Please use Chrome or Edge on Android or a desktop computer to connect your health devices." })
-        ] })
-      ] }) : isConnecting ? (
-        /* Connecting state */
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 p-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            LoaderCircle,
+        ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
             {
-              size: 16,
-              className: "text-[#f9a8c9] animate-spin flex-shrink-0"
+              type: "button",
+              onClick: onRefresh,
+              disabled: isFetching,
+              "data-ocid": "googlefit.refresh.button",
+              className: "flex items-center gap-2 rounded-xl border border-pink-400/30 bg-pink-400/10 px-4 py-2 text-sm font-medium text-pink-400 transition-all hover:bg-pink-400/20 disabled:opacity-50",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(RefreshCw, { className: "h-4 w-4" }),
+                "Refresh from Google Fit"
+              ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-[#f9a8c9] font-medium", children: "Connecting to device…" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-[10px] text-[#888888] mt-0.5", children: [
-              "Select your",
-              " ",
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#f9a8c9] font-semibold", children: "phone" }),
-              " from the picker — not headphones or speakers"
-            ] })
-          ] })
-        ] })
-      ) : isConnected ? (
-        /* Connected state */
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-3 space-y-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-wrap", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(PulsingDot, { color: "#22C55E" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(BluetoothConnected, { size: 14, className: "text-[#22C55E]" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-[#22C55E]", children: deviceName ?? "Unknown Device" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(DeviceTypeBadge, { type: deviceType }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-[#888888]", children: "· Live data active" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                "data-ocid": "bluetooth.disconnect.button",
-                onClick: onDisconnect,
-                className: "flex items-center gap-1 text-[10px] text-[#888888] hover:text-[#EF4444] transition-colors flex-shrink-0",
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 12 }),
-                  "Disconnect"
-                ]
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-2 mt-1", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "span",
-              {
-                className: "inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full",
-                style: {
-                  background: heartRate !== null ? "rgba(34,197,94,0.1)" : "rgba(255,255,255,0.05)",
-                  color: heartRate !== null ? "#22C55E" : "#888",
-                  border: `1px solid ${heartRate !== null ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.1)"}`
-                },
-                children: [
-                  heartRate !== null ? "✓" : "~",
-                  " Heart Rate"
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "span",
-              {
-                className: "inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full",
-                style: {
-                  background: bloodPressure !== null ? "rgba(34,197,94,0.1)" : "rgba(255,255,255,0.05)",
-                  color: bloodPressure !== null ? "#22C55E" : "#888",
-                  border: `1px solid ${bloodPressure !== null ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.1)"}`
-                },
-                children: [
-                  bloodPressure !== null ? "✓" : "~",
-                  " Blood Pressure"
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "span",
-              {
-                className: "inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full",
-                style: {
-                  background: steps2 !== null ? "rgba(34,197,94,0.1)" : "rgba(255,255,255,0.05)",
-                  color: steps2 !== null ? "#22C55E" : "#888",
-                  border: `1px solid ${steps2 !== null ? "rgba(34,197,94,0.3)" : "rgba(255,255,255,0.1)"}`
-                },
-                children: [
-                  steps2 !== null ? "✓" : "~",
-                  " Steps"
-                ]
-              }
-            )
-          ] }),
-          connectedServices.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 flex-wrap", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[9px] text-[#555] uppercase tracking-wider", children: "Live Services:" }),
-            connectedServices.map((svc) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "span",
-              {
-                className: "text-[10px] font-medium px-1.5 py-0.5 rounded",
-                style: {
-                  background: "rgba(34,197,94,0.1)",
-                  color: "#22C55E",
-                  border: "1px solid rgba(34,197,94,0.2)"
-                },
-                children: [
-                  "✓ ",
-                  svc
-                ]
-              },
-              svc
-            ))
-          ] }),
-          connectedApps.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 flex-wrap", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[9px] text-[#555] uppercase tracking-wider", children: "Via:" }),
-            connectedApps.map((app) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "span",
-              {
-                className: "text-[10px] font-medium px-1.5 py-0.5 rounded",
-                style: {
-                  background: "rgba(249,168,201,0.1)",
-                  color: "#f9a8c9",
-                  border: "1px solid rgba(249,168,201,0.2)"
-                },
-                children: app
-              },
-              app
-            ))
-          ] })
-        ] })
-      ) : (
-        /* Disconnected state — phone-focused guidance */
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Smartphone, { size: 16, className: "text-[#f9a8c9]" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-[#ffffff]", children: "Connect Your Phone for Health Data" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-1.5 mb-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
             {
-              n: 1,
-              text: "Open Google Fit or Samsung Health on your phone",
-              icon: "📱"
-            },
-            {
-              n: 2,
-              text: "Make sure your phone's Bluetooth is turned ON",
-              icon: "🔵"
-            },
-            {
-              n: 3,
-              text: "Tap the 'Connect Phone' button below",
-              icon: "👇"
-            },
-            {
-              n: 4,
-              text: "Select your phone or health device from the list",
-              icon: "✅"
+              type: "button",
+              onClick: onDisconnect,
+              "data-ocid": "googlefit.disconnect.button",
+              className: "flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/60 transition-all hover:bg-white/10 hover:text-white",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "h-4 w-4" }),
+                "Disconnect"
+              ]
             }
-          ].map((step) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "span",
-              {
-                className: "flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold mt-0.5",
-                style: {
-                  background: "rgba(249,168,201,0.2)",
-                  color: "#f9a8c9",
-                  border: "1px solid rgba(249,168,201,0.3)"
-                },
-                children: step.n
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-[11px] text-[#cccccc] leading-relaxed", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mr-1", children: step.icon }),
-              step.text
-            ] })
-          ] }, step.n)) }),
-          hasError && errorMessage && /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "div",
-            {
-              className: "flex items-start gap-2 p-2 rounded-lg mb-3",
-              style: {
-                background: "rgba(239,68,68,0.08)",
-                border: "1px solid rgba(239,68,68,0.2)"
-              },
-              children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-[10px] text-[#EF4444] leading-relaxed", children: [
-                "⚠ ",
-                errorMessage,
-                " — Make sure your phone's health app is open and Bluetooth is enabled, then try again."
-              ] })
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-wrap", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                "data-ocid": "bluetooth.connect.button",
-                onClick: onConnect,
-                className: "flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-[#0d0d0d] transition-all hover:brightness-110 active:scale-95",
-                style: { background: "#f9a8c9" },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Smartphone, { size: 13 }),
-                  "Connect Phone"
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "button",
-              {
-                type: "button",
-                "data-ocid": "bluetooth.other.button",
-                onClick: onConnect,
-                className: "flex items-center gap-1.5 px-3 py-2 rounded-lg text-[11px] text-[#888888] hover:text-[#cccccc] transition-colors",
-                style: {
-                  background: "rgba(255,255,255,0.05)",
-                  border: "1px solid rgba(255,255,255,0.1)"
-                },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(Bluetooth, { size: 11 }),
-                  "Other Device"
-                ]
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-[#888888] mt-2 leading-relaxed", children: "Make sure your phone's Bluetooth is on and your health app (Google Fit / Samsung Health) is open" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] text-[#555] mt-1", children: "ℹ Works in Chrome or Edge on Android & desktop only (HTTPS required)" })
-        ] })
-      )
+          )
+        ] }) })
+      ]
     }
   );
 }
@@ -49486,30 +49121,72 @@ function DashboardPage() {
   const navigate = useNavigate();
   const { actor } = useActor(createActor);
   const {
-    heartRate,
-    bloodPressure,
-    sleep: sleep2,
-    steps: steps2,
-    connectionStatus,
-    deviceName,
-    deviceType,
-    connectedApps,
-    connectedServices,
-    isSupported,
-    isUnsupported,
-    errorMessage,
-    connect,
-    disconnect,
-    setSleep,
-    setHeartRate,
-    setBloodPressure,
-    hrLastRecorded,
-    bpLastRecorded,
-    sleepLastRecorded,
-    hrSource,
-    bpSource,
-    sleepSource
-  } = useBluetoothHealth();
+    isAuthorized,
+    isFetching,
+    isRedirecting,
+    lastSync,
+    clientIdConfigured,
+    initiateOAuth,
+    fetchLast24HourData,
+    clearToken
+  } = useGoogleFit();
+  const [fitErrorMessage, setFitErrorMessage] = reactExports.useState(null);
+  const [heartRate, setHeartRate] = reactExports.useState(null);
+  const [bloodPressureSystolic, setBloodPressureSystolic] = reactExports.useState(null);
+  const [bloodPressureDiastolic, setBloodPressureDiastolic] = reactExports.useState(null);
+  const [sleep2, setSleep] = reactExports.useState(null);
+  const [steps2, setSteps] = reactExports.useState(null);
+  const [hrSource, setHrSource] = reactExports.useState(
+    null
+  );
+  const [bpSource, setBpSource] = reactExports.useState(
+    null
+  );
+  const [sleepSource, setSleepSource] = reactExports.useState(null);
+  const [hrLastRecorded, setHrLastRecorded] = reactExports.useState(null);
+  const [bpLastRecorded, setBpLastRecorded] = reactExports.useState(null);
+  const [sleepLastRecorded, setSleepLastRecorded] = reactExports.useState(null);
+  const handleGoogleFitRefresh = reactExports.useCallback(async () => {
+    try {
+      setFitErrorMessage(null);
+      const data = await fetchLast24HourData();
+      const now2 = /* @__PURE__ */ new Date();
+      if (data.heartRate !== null) {
+        setHeartRate(data.heartRate);
+        setHrSource("Google Fit");
+        setHrLastRecorded(now2);
+      }
+      if (data.bloodPressureSystolic !== null && data.bloodPressureDiastolic !== null) {
+        setBloodPressureSystolic(data.bloodPressureSystolic);
+        setBloodPressureDiastolic(data.bloodPressureDiastolic);
+        setBpSource("Google Fit");
+        setBpLastRecorded(now2);
+      }
+      if (data.sleep !== null) {
+        setSleep(data.sleep);
+        setSleepSource("Google Fit");
+        setSleepLastRecorded(now2);
+      }
+      if (data.steps !== null) {
+        setSteps(data.steps);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      if (msg === "unauthorized") {
+        clearToken();
+        setFitErrorMessage("Google Fit session expired. Please reconnect.");
+      } else {
+        setFitErrorMessage(
+          "Could not fetch Google Fit data. You can still enter data manually."
+        );
+      }
+    }
+  }, [fetchLast24HourData, clearToken]);
+  reactExports.useEffect(() => {
+    if (isAuthorized) {
+      handleGoogleFitRefresh();
+    }
+  }, [isAuthorized, handleGoogleFitRefresh]);
   const userName = localStorage.getItem("ccx_user_name") || "user";
   const persistHealthLocal = reactExports.useCallback((input) => {
     try {
@@ -49535,15 +49212,19 @@ function DashboardPage() {
             window.dispatchEvent(new CustomEvent("careconnect_health_updated"));
             if (result.hr_latest !== void 0 && result.hr_latest !== null) {
               setHeartRate(result.hr_latest);
+              setHrSource("Manual");
+              setHrLastRecorded(/* @__PURE__ */ new Date());
             }
             if (result.systolic_latest !== void 0 && result.systolic_latest !== null && result.diastolic_latest !== void 0 && result.diastolic_latest !== null) {
-              setBloodPressure({
-                systolic: result.systolic_latest,
-                diastolic: result.diastolic_latest
-              });
+              setBloodPressureSystolic(result.systolic_latest);
+              setBloodPressureDiastolic(result.diastolic_latest);
+              setBpSource("Manual");
+              setBpLastRecorded(/* @__PURE__ */ new Date());
             }
             if (result.sleep_latest !== void 0 && result.sleep_latest !== null) {
               setSleep(result.sleep_latest);
+              setSleepSource("Manual");
+              setSleepLastRecorded(/* @__PURE__ */ new Date());
             }
           }
         } else {
@@ -49551,14 +49232,19 @@ function DashboardPage() {
           if (saved) {
             try {
               const d2 = JSON.parse(saved);
-              if (d2.hr_latest != null) setHeartRate(d2.hr_latest);
-              if (d2.systolic_latest != null && d2.diastolic_latest != null) {
-                setBloodPressure({
-                  systolic: d2.systolic_latest,
-                  diastolic: d2.diastolic_latest
-                });
+              if (d2.hr_latest != null) {
+                setHeartRate(d2.hr_latest);
+                setHrSource("Manual");
               }
-              if (d2.sleep_latest != null) setSleep(d2.sleep_latest);
+              if (d2.systolic_latest != null && d2.diastolic_latest != null) {
+                setBloodPressureSystolic(d2.systolic_latest);
+                setBloodPressureDiastolic(d2.diastolic_latest);
+                setBpSource("Manual");
+              }
+              if (d2.sleep_latest != null) {
+                setSleep(d2.sleep_latest);
+                setSleepSource("Manual");
+              }
             } catch {
             }
           }
@@ -49568,24 +49254,31 @@ function DashboardPage() {
         if (saved) {
           try {
             const d2 = JSON.parse(saved);
-            if (d2.hr_latest != null) setHeartRate(d2.hr_latest);
-            if (d2.systolic_latest != null && d2.diastolic_latest != null) {
-              setBloodPressure({
-                systolic: d2.systolic_latest,
-                diastolic: d2.diastolic_latest
-              });
+            if (d2.hr_latest != null) {
+              setHeartRate(d2.hr_latest);
+              setHrSource("Manual");
             }
-            if (d2.sleep_latest != null) setSleep(d2.sleep_latest);
+            if (d2.systolic_latest != null && d2.diastolic_latest != null) {
+              setBloodPressureSystolic(d2.systolic_latest);
+              setBloodPressureDiastolic(d2.diastolic_latest);
+              setBpSource("Manual");
+            }
+            if (d2.sleep_latest != null) {
+              setSleep(d2.sleep_latest);
+              setSleepSource("Manual");
+            }
           } catch {
           }
         }
       }
     };
     loadInitial();
-  }, [actor, setHeartRate, setBloodPressure, setSleep, userName]);
+  }, [actor, userName]);
   const handleHRManualInput = async (bpm) => {
     if (bpm === null) return;
     setHeartRate(bpm);
+    setHrSource("Manual");
+    setHrLastRecorded(/* @__PURE__ */ new Date());
     persistHealthLocal({ hr_latest: bpm });
     try {
       if (actor) {
@@ -49608,7 +49301,10 @@ function DashboardPage() {
   };
   const handleBPManualInput = async (bp) => {
     if (!bp) return;
-    setBloodPressure(bp);
+    setBloodPressureSystolic(bp.systolic);
+    setBloodPressureDiastolic(bp.diastolic);
+    setBpSource("Manual");
+    setBpLastRecorded(/* @__PURE__ */ new Date());
     persistHealthLocal({
       systolic_latest: bp.systolic,
       diastolic_latest: bp.diastolic
@@ -49633,6 +49329,8 @@ function DashboardPage() {
   };
   const handleSleepInput = async (hours) => {
     setSleep(hours);
+    setSleepSource("Manual");
+    setSleepLastRecorded(/* @__PURE__ */ new Date());
     if (hours === null) return;
     persistHealthLocal({ sleep_latest: hours });
     try {
@@ -49654,60 +49352,6 @@ function DashboardPage() {
     } catch {
     }
   };
-  const btDebounceRef = reactExports.useRef(null);
-  reactExports.useEffect(() => {
-    if (connectionStatus !== "connected") return;
-    if (heartRate === null && bloodPressure === null) return;
-    if (btDebounceRef.current) clearTimeout(btDebounceRef.current);
-    btDebounceRef.current = setTimeout(async () => {
-      try {
-        const updates = {};
-        if (heartRate !== null) updates.hr_latest = heartRate;
-        if (bloodPressure) {
-          updates.systolic_latest = bloodPressure.systolic;
-          updates.diastolic_latest = bloodPressure.diastolic;
-        }
-        persistHealthLocal(updates);
-        if (actor) {
-          const calls = [];
-          if (heartRate !== null)
-            calls.push(
-              actor.add_metric(userName, "HeartRate", heartRate, "Bluetooth")
-            );
-          if (bloodPressure) {
-            calls.push(
-              actor.add_metric(
-                userName,
-                "SystolicBP",
-                bloodPressure.systolic,
-                "Bluetooth"
-              )
-            );
-            calls.push(
-              actor.add_metric(
-                userName,
-                "DiastolicBP",
-                bloodPressure.diastolic,
-                "Bluetooth"
-              )
-            );
-          }
-          await Promise.allSettled(calls);
-        }
-      } catch {
-      }
-    }, 6e4);
-    return () => {
-      if (btDebounceRef.current) clearTimeout(btDebounceRef.current);
-    };
-  }, [
-    heartRate,
-    bloodPressure,
-    connectionStatus,
-    actor,
-    userName,
-    persistHealthLocal
-  ]);
   const { moodAdaptive, focusModeActive } = useAI();
   const firstName = userName.split(" ")[0];
   const today = (/* @__PURE__ */ new Date()).toLocaleDateString("en-US", {
@@ -49716,7 +49360,6 @@ function DashboardPage() {
     month: "long",
     day: "numeric"
   });
-  const isConnected = connectionStatus === "connected";
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 animate-fadeInUp", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(LivingInsightCard, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col sm:flex-row sm:items-center justify-between gap-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
@@ -49739,69 +49382,61 @@ function DashboardPage() {
           /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-bold text-[#ffffff] mt-1", children: "Health Score" })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          BluetoothPanel,
+          GoogleFitPanel,
           {
-            isSupported,
-            isUnsupported,
-            connectionStatus,
-            deviceName,
-            deviceType,
-            connectedApps,
-            connectedServices,
-            heartRate,
-            bloodPressure,
-            steps: steps2,
-            errorMessage,
-            onConnect: connect,
-            onDisconnect: disconnect
+            isAuthorized,
+            isFetching,
+            isRedirecting,
+            lastSync,
+            clientIdConfigured,
+            onRequestToken: initiateOAuth,
+            onRefresh: handleGoogleFitRefresh,
+            onDisconnect: clearToken,
+            errorMessage: fitErrorMessage
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           HealthScorePanel,
           {
             heartRate,
-            bloodPressure,
+            bloodPressure: bloodPressureSystolic !== null && bloodPressureDiastolic !== null ? {
+              systolic: bloodPressureSystolic,
+              diastolic: bloodPressureDiastolic
+            } : null,
             sleep: sleep2
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            className: `grid gap-3 mt-2 ${steps2 !== null ? "grid-cols-4" : "grid-cols-3"}`,
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                HeartRateTile,
-                {
-                  value: heartRate,
-                  lastRecorded: hrLastRecorded,
-                  source: hrSource,
-                  onManualInput: handleHRManualInput
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                BloodPressureTile,
-                {
-                  systolic: (bloodPressure == null ? void 0 : bloodPressure.systolic) ?? null,
-                  diastolic: (bloodPressure == null ? void 0 : bloodPressure.diastolic) ?? null,
-                  lastRecorded: bpLastRecorded,
-                  source: bpSource,
-                  onManualInput: handleBPManualInput
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                SleepTile,
-                {
-                  value: sleep2,
-                  connected: isConnected,
-                  lastRecorded: sleepLastRecorded,
-                  source: sleepSource,
-                  onManualInput: handleSleepInput
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(StepsTile, { value: steps2 })
-            ]
-          }
-        )
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid gap-3 mt-2 grid-cols-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            HeartRateTile,
+            {
+              value: heartRate,
+              lastRecorded: hrLastRecorded,
+              source: hrSource,
+              onManualInput: handleHRManualInput
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            BloodPressureTile,
+            {
+              systolic: bloodPressureSystolic,
+              diastolic: bloodPressureDiastolic,
+              lastRecorded: bpLastRecorded,
+              source: bpSource,
+              onManualInput: handleBPManualInput
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            SleepTile,
+            {
+              value: sleep2,
+              lastRecorded: sleepLastRecorded,
+              source: sleepSource,
+              onManualInput: handleSleepInput
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(StepsTile, { value: steps2 })
+        ] })
       ] }),
       !focusModeActive && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(GlassCard, { className: "p-5", children: [
@@ -58720,7 +58355,7 @@ const defaultAI = {
 const tabs = [
   { key: "profile", label: "Profile & Appearance", icon: User },
   { key: "notifications", label: "Notifications", icon: Bell },
-  { key: "health", label: "Health & Bluetooth", icon: HeartPulse },
+  { key: "health", label: "Health & Google Fit", icon: HeartPulse },
   { key: "ai", label: "AI & Privacy", icon: BrainCircuit }
 ];
 function getInitials(name) {
@@ -58729,7 +58364,13 @@ function getInitials(name) {
 function SettingsPage() {
   const [activeTab, setActiveTab] = reactExports.useState("profile");
   const { theme, toggleTheme } = useTheme();
-  const bt = useBluetoothHealth();
+  const {
+    isAuthorized: fitAuthorized,
+    isFetching: fitFetching,
+    lastSync: fitLastSync,
+    requestToken: fitRequestToken,
+    clearToken: fitClearToken
+  } = useGoogleFit();
   const [displayName, setDisplayName] = reactExports.useState(() => {
     return localStorage.getItem("careconnect_username") || "User";
   });
@@ -58758,7 +58399,7 @@ function SettingsPage() {
     }
   });
   const [resetMsg, setResetMsg] = reactExports.useState(false);
-  const isIOS2 = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const isIOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
   reactExports.useEffect(() => {
     localStorage.setItem("careconnect_notif_prefs", JSON.stringify(notif));
   }, [notif]);
@@ -58995,47 +58636,43 @@ function SettingsPage() {
           transition: { duration: 0.3 },
           className: "space-y-4",
           children: [
-            isIOS2 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-xl border border-amber-500/30 bg-amber-500/10 p-4 flex items-start gap-3", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5 text-amber-400 shrink-0 mt-0.5" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-medium text-amber-200", children: "Bluetooth Not Supported on iOS" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-amber-200/70 mt-1", children: "Apple devices do not support Web Bluetooth. Health metrics can be entered manually below." })
-              ] })
-            ] }),
-            !isIOS2 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: cardClass, children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: cardClass, children: [
               /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
-                bt.connectionStatus === "connected" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Bluetooth, { className: "w-4 h-4 text-green-400" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(BluetoothOff, { className: "w-4 h-4 text-muted-foreground" }),
-                "Bluetooth Status"
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "w-4 h-4 text-green-400" }),
+                "Google Fit"
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-3", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-foreground", children: bt.connectionStatus === "connected" ? `Connected: ${bt.deviceName || "Device"}` : bt.connectionStatus === "connecting" ? "Connecting..." : "Disconnected" }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: bt.connectionStatus === "connected" ? `Type: ${bt.deviceType}` : "Connect your phone to sync health data" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-foreground", children: fitAuthorized ? "Connected" : "Not connected" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: fitLastSync ? `Last sync: ${fitLastSync.toLocaleString()}` : "Connect Google Fit to sync health data" })
                 ] }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                fitFetching ? /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "px-4 py-2 rounded-lg text-sm font-medium bg-muted/40 text-muted-foreground border border-border flex items-center gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(RotateCcw, { className: "w-3 h-3 animate-spin" }),
+                  "Syncing…"
+                ] }) : fitAuthorized ? /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "button",
                   {
                     type: "button",
-                    onClick: bt.connect,
-                    disabled: bt.connectionStatus === "connecting",
-                    className: `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${bt.connectionStatus === "connected" ? "bg-green-500/20 text-green-400 border border-green-500/40" : "bg-primary/20 text-primary border border-primary/30 hover:bg-primary/30"}`,
-                    "data-ocid": "settings.bluetooth.connect_button",
-                    children: bt.connectionStatus === "connected" ? "Connected" : bt.connectionStatus === "connecting" ? "Connecting..." : "Connect Phone"
+                    onClick: fitClearToken,
+                    className: "px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-red-500/15 text-red-400 border border-red-500/30 hover:bg-red-500/25",
+                    "data-ocid": "settings.googlefit.disconnect_button",
+                    children: "Disconnect"
+                  }
+                ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    type: "button",
+                    onClick: fitRequestToken,
+                    className: "px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-primary/20 text-primary border border-primary/30 hover:bg-primary/30",
+                    "data-ocid": "settings.googlefit.connect_button",
+                    children: "Connect Google Fit"
                   }
                 )
               ] }),
-              bt.connectedApps.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: bt.connectedApps.map((app) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "span",
-                {
-                  className: "inline-flex items-center gap-1 px-2 py-1 rounded-md bg-green-500/10 text-green-400 text-xs border border-green-500/20",
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(Smartphone, { className: "w-3 h-3" }),
-                    app
-                  ]
-                },
-                app
-              )) }),
-              bt.errorMessage && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-red-400 mt-2", children: bt.errorMessage })
+              isIOS && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-2 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-3", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-4 h-4 text-amber-400 shrink-0 mt-0.5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-amber-200", children: "Google Fit is not available on iOS. Use manual entry below." })
+              ] })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: cardClass, children: [
               /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "text-base font-semibold text-foreground mb-3 flex items-center gap-2", children: [
@@ -62833,26 +62470,6 @@ const MODULE_CARDS = [
     route: "/ai/predictive-care"
   },
   {
-    id: "adaptive-ui",
-    name: "Adaptive UI Intelligence",
-    description: "Interface evolves automatically based on your pace and interaction patterns.",
-    Icon: LayoutDashboard,
-    colorClass: "from-blue-500/20 to-sky-500/20",
-    borderClass: "border-blue-500/25",
-    iconColorClass: "#60a5fa",
-    route: "/ai/adaptive-ui"
-  },
-  {
-    id: "health-assistant",
-    name: "Conversational Health Assistant",
-    description: "Natural language AI for health queries, intelligent guidance, and emotional support.",
-    Icon: MessageCircle,
-    colorClass: "from-green-500/20 to-emerald-500/20",
-    borderClass: "border-green-500/25",
-    iconColorClass: "#34d399",
-    route: "/ai/health-assistant"
-  },
-  {
     id: "health-memory",
     name: "AI Health Memory",
     description: "Never forgets your symptoms, routines, and contextual health history.",
@@ -62903,16 +62520,6 @@ const MODULE_CARDS = [
     route: "/ai/preventive-crisis"
   },
   {
-    id: "emotional-wellness",
-    name: "Emotional Wellness Intelligence",
-    description: "Understand your emotional patterns and receive calm, supportive wellness insights.",
-    Icon: Heart,
-    colorClass: "from-rose-500/20 to-pink-500/20",
-    borderClass: "border-rose-500/25",
-    iconColorClass: "#f43f5e",
-    route: "/ai/emotional-wellness"
-  },
-  {
     id: "family-guardian",
     name: "Family Guardian System",
     description: "Shared health reminders and care coordination for your entire family.",
@@ -62921,36 +62528,6 @@ const MODULE_CARDS = [
     borderClass: "border-teal-500/25",
     iconColorClass: "#2dd4bf",
     route: "/ai/family-guardian"
-  },
-  {
-    id: "recovery",
-    name: "Recovery Intelligence",
-    description: "Adaptive recovery plans with milestone tracking and healing progress arcs.",
-    Icon: Sparkles,
-    colorClass: "from-emerald-500/20 to-green-500/20",
-    borderClass: "border-emerald-500/25",
-    iconColorClass: "#4ade80",
-    route: "/ai/recovery"
-  },
-  {
-    id: "voice-assistant",
-    name: "Voice Care Assistant",
-    description: "Hands-free AI health interaction with reactive audio visualisation.",
-    Icon: Mic,
-    colorClass: "from-indigo-500/20 to-violet-500/20",
-    borderClass: "border-indigo-500/25",
-    iconColorClass: "#818cf8",
-    route: "/ai/voice-assistant"
-  },
-  {
-    id: "mood-adaptive",
-    name: "Mood-Adaptive Interface",
-    description: "UI shifts with time of day and stress level — morning energy, night calm.",
-    Icon: Palette,
-    colorClass: "from-violet-500/20 to-purple-500/20",
-    borderClass: "border-violet-500/25",
-    iconColorClass: "#c084fc",
-    route: "/ai/mood-adaptive"
   },
   {
     id: "digital-brain",

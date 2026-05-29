@@ -1,8 +1,8 @@
+import { useGoogleFit } from "@/hooks/useGoogleFit";
 import {
+  Activity,
   AlertTriangle,
   Bell,
-  Bluetooth,
-  BluetoothOff,
   BrainCircuit,
   Check,
   ChevronRight,
@@ -11,13 +11,11 @@ import {
   RotateCcw,
   Settings,
   ShieldCheck,
-  Smartphone,
   Sun,
   User,
 } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { useBluetoothHealth } from "../hooks/useBluetoothHealth";
 import { useTheme } from "../hooks/useTheme";
 
 type TabKey = "profile" | "notifications" | "health" | "ai";
@@ -67,7 +65,7 @@ const defaultAI: AIPrefs = {
 const tabs: { key: TabKey; label: string; icon: React.ElementType }[] = [
   { key: "profile", label: "Profile & Appearance", icon: User },
   { key: "notifications", label: "Notifications", icon: Bell },
-  { key: "health", label: "Health & Bluetooth", icon: HeartPulse },
+  { key: "health", label: "Health & Google Fit", icon: HeartPulse },
   { key: "ai", label: "AI & Privacy", icon: BrainCircuit },
 ];
 
@@ -83,7 +81,13 @@ function getInitials(name: string) {
 export default function SettingsPage() {
   const [activeTab, setActiveTab] = useState<TabKey>("profile");
   const { theme, toggleTheme } = useTheme();
-  const bt = useBluetoothHealth();
+  const {
+    isAuthorized: fitAuthorized,
+    isFetching: fitFetching,
+    lastSync: fitLastSync,
+    requestToken: fitRequestToken,
+    clearToken: fitClearToken,
+  } = useGoogleFit();
 
   // Profile
   const [displayName, setDisplayName] = useState(() => {
@@ -389,82 +393,56 @@ export default function SettingsPage() {
             transition={{ duration: 0.3 }}
             className="space-y-4"
           >
-            {isIOS && (
-              <div className="rounded-xl border border-amber-500/30 bg-amber-500/10 p-4 flex items-start gap-3">
-                <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+            <div className={cardClass}>
+              <h3 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Activity className="w-4 h-4 text-green-400" />
+                Google Fit
+              </h3>
+              <div className="flex items-center justify-between mb-3">
                 <div>
-                  <p className="text-sm font-medium text-amber-200">
-                    Bluetooth Not Supported on iOS
+                  <p className="text-sm text-foreground">
+                    {fitAuthorized ? "Connected" : "Not connected"}
                   </p>
-                  <p className="text-xs text-amber-200/70 mt-1">
-                    Apple devices do not support Web Bluetooth. Health metrics
-                    can be entered manually below.
+                  <p className="text-xs text-muted-foreground">
+                    {fitLastSync
+                      ? `Last sync: ${fitLastSync.toLocaleString()}`
+                      : "Connect Google Fit to sync health data"}
                   </p>
                 </div>
-              </div>
-            )}
-
-            {!isIOS && (
-              <div className={cardClass}>
-                <h3 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">
-                  {bt.connectionStatus === "connected" ? (
-                    <Bluetooth className="w-4 h-4 text-green-400" />
-                  ) : (
-                    <BluetoothOff className="w-4 h-4 text-muted-foreground" />
-                  )}
-                  Bluetooth Status
-                </h3>
-                <div className="flex items-center justify-between mb-3">
-                  <div>
-                    <p className="text-sm text-foreground">
-                      {bt.connectionStatus === "connected"
-                        ? `Connected: ${bt.deviceName || "Device"}`
-                        : bt.connectionStatus === "connecting"
-                          ? "Connecting..."
-                          : "Disconnected"}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {bt.connectionStatus === "connected"
-                        ? `Type: ${bt.deviceType}`
-                        : "Connect your phone to sync health data"}
-                    </p>
-                  </div>
+                {fitFetching ? (
+                  <span className="px-4 py-2 rounded-lg text-sm font-medium bg-muted/40 text-muted-foreground border border-border flex items-center gap-2">
+                    <RotateCcw className="w-3 h-3 animate-spin" />
+                    Syncing…
+                  </span>
+                ) : fitAuthorized ? (
                   <button
                     type="button"
-                    onClick={bt.connect}
-                    disabled={bt.connectionStatus === "connecting"}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      bt.connectionStatus === "connected"
-                        ? "bg-green-500/20 text-green-400 border border-green-500/40"
-                        : "bg-primary/20 text-primary border border-primary/30 hover:bg-primary/30"
-                    }`}
-                    data-ocid="settings.bluetooth.connect_button"
+                    onClick={fitClearToken}
+                    className="px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-red-500/15 text-red-400 border border-red-500/30 hover:bg-red-500/25"
+                    data-ocid="settings.googlefit.disconnect_button"
                   >
-                    {bt.connectionStatus === "connected"
-                      ? "Connected"
-                      : bt.connectionStatus === "connecting"
-                        ? "Connecting..."
-                        : "Connect Phone"}
+                    Disconnect
                   </button>
-                </div>
-                {bt.connectedApps.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
-                    {bt.connectedApps.map((app) => (
-                      <span
-                        key={app}
-                        className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-green-500/10 text-green-400 text-xs border border-green-500/20"
-                      >
-                        <Smartphone className="w-3 h-3" />
-                        {app}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                {bt.errorMessage && (
-                  <p className="text-xs text-red-400 mt-2">{bt.errorMessage}</p>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={fitRequestToken}
+                    className="px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-primary/20 text-primary border border-primary/30 hover:bg-primary/30"
+                    data-ocid="settings.googlefit.connect_button"
+                  >
+                    Connect Google Fit
+                  </button>
                 )}
               </div>
-            )}
+              {isIOS && (
+                <div className="mt-2 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-3">
+                  <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <p className="text-xs text-amber-200">
+                    Google Fit is not available on iOS. Use manual entry below.
+                  </p>
+                </div>
+              )}
+            </div>
 
             <div className={cardClass}>
               <h3 className="text-base font-semibold text-foreground mb-3 flex items-center gap-2">

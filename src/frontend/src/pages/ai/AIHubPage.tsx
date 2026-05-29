@@ -347,28 +347,6 @@ const MODULE_CARDS = [
     route: "/ai/predictive-care",
   },
   {
-    id: "adaptive-ui",
-    name: "Adaptive UI Intelligence",
-    description:
-      "Interface evolves automatically based on your pace and interaction patterns.",
-    Icon: LayoutDashboard,
-    colorClass: "from-blue-500/20 to-sky-500/20",
-    borderClass: "border-blue-500/25",
-    iconColorClass: "#60a5fa",
-    route: "/ai/adaptive-ui",
-  },
-  {
-    id: "health-assistant",
-    name: "Conversational Health Assistant",
-    description:
-      "Natural language AI for health queries, intelligent guidance, and emotional support.",
-    Icon: MessageCircle,
-    colorClass: "from-green-500/20 to-emerald-500/20",
-    borderClass: "border-green-500/25",
-    iconColorClass: "#34d399",
-    route: "/ai/health-assistant",
-  },
-  {
     id: "health-memory",
     name: "AI Health Memory",
     description:
@@ -424,17 +402,6 @@ const MODULE_CARDS = [
     route: "/ai/preventive-crisis",
   },
   {
-    id: "emotional-wellness",
-    name: "Emotional Wellness Intelligence",
-    description:
-      "Understand your emotional patterns and receive calm, supportive wellness insights.",
-    Icon: Heart,
-    colorClass: "from-rose-500/20 to-pink-500/20",
-    borderClass: "border-rose-500/25",
-    iconColorClass: "#f43f5e",
-    route: "/ai/emotional-wellness",
-  },
-  {
     id: "family-guardian",
     name: "Family Guardian System",
     description:
@@ -444,39 +411,6 @@ const MODULE_CARDS = [
     borderClass: "border-teal-500/25",
     iconColorClass: "#2dd4bf",
     route: "/ai/family-guardian",
-  },
-  {
-    id: "recovery",
-    name: "Recovery Intelligence",
-    description:
-      "Adaptive recovery plans with milestone tracking and healing progress arcs.",
-    Icon: Sparkles,
-    colorClass: "from-emerald-500/20 to-green-500/20",
-    borderClass: "border-emerald-500/25",
-    iconColorClass: "#4ade80",
-    route: "/ai/recovery",
-  },
-  {
-    id: "voice-assistant",
-    name: "Voice Care Assistant",
-    description:
-      "Hands-free AI health interaction with reactive audio visualisation.",
-    Icon: Mic,
-    colorClass: "from-indigo-500/20 to-violet-500/20",
-    borderClass: "border-indigo-500/25",
-    iconColorClass: "#818cf8",
-    route: "/ai/voice-assistant",
-  },
-  {
-    id: "mood-adaptive",
-    name: "Mood-Adaptive Interface",
-    description:
-      "UI shifts with time of day and stress level — morning energy, night calm.",
-    Icon: Palette,
-    colorClass: "from-violet-500/20 to-purple-500/20",
-    borderClass: "border-violet-500/25",
-    iconColorClass: "#c084fc",
-    route: "/ai/mood-adaptive",
   },
   {
     id: "digital-brain",
